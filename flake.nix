@@ -28,9 +28,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    lightdash = {
+      url = "github:RCasatta/lightdash";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
   };
 
-  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org }:
+  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         blocks_iterator_pkg = blocks_iterator.packages.${system};
@@ -38,12 +43,14 @@
         waterfalls_pkg = waterfalls.packages.${system};
         eternitywall_pkg = eternitywall.packages.${system};
         opreturn_org_pkg = opreturn_org.packages.${system};
+        lightdash_pkg = lightdash.packages.${system};
+
       in
       {
         packages.blocks_iterator = blocks_iterator_pkg.default;
         packages.fbbe = fbbe_pkg.default;
         packages.waterfalls = waterfalls_pkg.default;
         packages.eternitywall = eternitywall_pkg.default;
-        packages.opreturn_org = opreturn_org_pkg.default;
+        packages.lightdash = lightdash_pkg.default;
       });
 }
