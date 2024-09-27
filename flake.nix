@@ -57,19 +57,16 @@
         lightdash_pkg = lightdash.packages.${system};
         pay2email_pkg = pay2email.packages.${system};
         electrs_pkg = electrs.packages.${system};
-
-
       in
       {
         packages.blocks_iterator = blocks_iterator_pkg.default;
         packages.fbbe = fbbe_pkg.default;
         packages.waterfalls = waterfalls_pkg.default;
         packages.eternitywall = eternitywall_pkg.default;
+        packages.opreturn_org = opreturn_org_pkg.default;
         packages.lightdash = lightdash_pkg.default;
         packages.pay2email = pay2email_pkg.default;
         packages.electrs = electrs_pkg.bin;
         packages.electrs_liquid = electrs_pkg.binLiquid;
-
-
       });
 }
