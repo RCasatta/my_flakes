@@ -38,10 +38,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    electrs = {
+      url = "github:blockstream/electrs";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
 
   };
 
-  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash, pay2email }:
+  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash, pay2email, electrs }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         blocks_iterator_pkg = blocks_iterator.packages.${system};
@@ -51,6 +56,7 @@
         opreturn_org_pkg = opreturn_org.packages.${system};
         lightdash_pkg = lightdash.packages.${system};
         pay2email_pkg = pay2email.packages.${system};
+        electrs_pkg = electrs.packages.${system};
 
 
       in
@@ -61,5 +67,9 @@
         packages.eternitywall = eternitywall_pkg.default;
         packages.lightdash = lightdash_pkg.default;
         packages.pay2email = pay2email_pkg.default;
+        packages.electrs = electrs_pkg.bin;
+        packages.electrs_liquid = electrs_pkg.binLiquid;
+
+
       });
 }
