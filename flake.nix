@@ -43,10 +43,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    esplora-enterprise-monitoring = {
+      url = "git+ssh://git@git.casatta.it/git/esplora-enterprise-monitoring?rev=5912113e42689be37bf9c94d6eb0fe2ef829b9b2";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
 
   };
 
-  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash, pay2email, electrs }:
+  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash, pay2email, electrs, esplora-enterprise-monitoring }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         blocks_iterator_pkg = blocks_iterator.packages.${system};
@@ -57,6 +62,7 @@
         lightdash_pkg = lightdash.packages.${system};
         pay2email_pkg = pay2email.packages.${system};
         electrs_pkg = electrs.packages.${system};
+        esplora-enterprise-monitoring_pkg = esplora-enterprise-monitoring.packages.${system};
       in
       {
         packages.blocks_iterator = blocks_iterator_pkg.default;
@@ -68,5 +74,6 @@
         packages.pay2email = pay2email_pkg.default;
         packages.electrs = electrs_pkg.bin;
         packages.electrs_liquid = electrs_pkg.binLiquid;
+        packages.esplora-enterprise-monitoring = esplora-enterprise-monitoring_pkg.default;
       });
 }
