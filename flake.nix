@@ -33,9 +33,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    pay2email = {
+      url = "github:RCasatta/pay2email";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
+
   };
 
-  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash }:
+  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash, pay2email }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         blocks_iterator_pkg = blocks_iterator.packages.${system};
@@ -44,6 +50,8 @@
         eternitywall_pkg = eternitywall.packages.${system};
         opreturn_org_pkg = opreturn_org.packages.${system};
         lightdash_pkg = lightdash.packages.${system};
+        pay2email_pkg = pay2email.packages.${system};
+
 
       in
       {
@@ -52,5 +60,6 @@
         packages.waterfalls = waterfalls_pkg.default;
         packages.eternitywall = eternitywall_pkg.default;
         packages.lightdash = lightdash_pkg.default;
+        packages.pay2email = pay2email_pkg.default;
       });
 }
