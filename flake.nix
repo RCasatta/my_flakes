@@ -48,10 +48,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    post2fs = {
+      url = "git+ssh://git@git.casatta.it/git/post2fs";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
 
   };
 
-  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash, pay2email, electrs, esplora-enterprise-monitoring }:
+  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash, pay2email, electrs, esplora-enterprise-monitoring, post2fs }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         blocks_iterator_pkg = blocks_iterator.packages.${system};
@@ -63,6 +68,8 @@
         pay2email_pkg = pay2email.packages.${system};
         electrs_pkg = electrs.packages.${system};
         esplora-enterprise-monitoring_pkg = esplora-enterprise-monitoring.packages.${system};
+        post2fs_pkg = post2fs.packages.${system};
+
       in
       {
         packages.blocks_iterator = blocks_iterator_pkg.default;
@@ -75,5 +82,7 @@
         packages.electrs = electrs_pkg.bin;
         packages.electrs_liquid = electrs_pkg.binLiquid;
         packages.esplora-enterprise-monitoring = esplora-enterprise-monitoring_pkg.default;
+        packages.post2fs = post2fs_pkg.default;
+
       });
 }
