@@ -97,6 +97,27 @@
     "crane_10": {
       "inputs": {
         "nixpkgs": [
+          "sling",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1721058578,
+        "narHash": "sha256-fs/PVa3H5dS1//4BjecWi3nitXm5fRObx0JxXIAo+JA=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "17e5109bb1d9fb393d70fba80988f7d70d1ded1a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
+    "crane_11": {
+      "inputs": {
+        "nixpkgs": [
           "waterfalls",
           "nixpkgs"
         ]
@@ -585,6 +606,7 @@
         "opreturn_org": "opreturn_org",
         "pay2email": "pay2email",
         "post2fs": "post2fs",
+        "sling": "sling",
         "waterfalls": "waterfalls"
       }
     },
@@ -726,6 +748,30 @@
         "type": "github"
       }
     },
+    "sling": {
+      "inputs": {
+        "crane": "crane_10",
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1727076239,
+        "narHash": "sha256-4HRExNn3UDq1SmOjFhFFNuPdTDXrvNLjkdmofvhsuz4=",
+        "owner": "daywalker90",
+        "repo": "sling",
+        "rev": "2fafc9770bd7bd37eacdb5ad71d6049f1e50e54e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "daywalker90",
+        "repo": "sling",
+        "type": "github"
+      }
+    },
     "systems": {
       "locked": {
         "lastModified": 1681028828,
@@ -743,7 +789,7 @@
     },
     "waterfalls": {
       "inputs": {
-        "crane": "crane_10",
+        "crane": "crane_11",
         "flake-utils": [
           "flake-utils"
         ],

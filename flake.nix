@@ -53,10 +53,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    sling = {
+      url = "github:daywalker90/sling";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
 
   };
 
-  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash, pay2email, electrs, esplora-enterprise-monitoring, post2fs }:
+  outputs = { self, nixpkgs, flake-utils, blocks_iterator, fbbe, waterfalls, eternitywall, opreturn_org, lightdash, pay2email, electrs, esplora-enterprise-monitoring, post2fs, sling }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         blocks_iterator_pkg = blocks_iterator.packages.${system};
@@ -69,6 +74,8 @@
         electrs_pkg = electrs.packages.${system};
         esplora-enterprise-monitoring_pkg = esplora-enterprise-monitoring.packages.${system};
         post2fs_pkg = post2fs.packages.${system};
+        sling_pkg = sling.packages.${system};
+
 
       in
       {
@@ -83,6 +90,7 @@
         packages.electrs_liquid = electrs_pkg.binLiquid;
         packages.esplora-enterprise-monitoring = esplora-enterprise-monitoring_pkg.default;
         packages.post2fs = post2fs_pkg.default;
+        packages.sling = sling_pkg.default;
 
       });
 }
