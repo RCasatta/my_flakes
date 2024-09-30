@@ -44,7 +44,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     esplora-enterprise-monitoring = {
-      url = "git+ssh://git@git.casatta.it/git/esplora-enterprise-monitoring?rev=5912113e42689be37bf9c94d6eb0fe2ef829b9b2";
+      url = "git+ssh://git@git.casatta.it/git/esplora-enterprise-monitoring";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
