@@ -63,6 +63,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    lwk_cli = {
+      url = "github:blockstream/lwk";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
 
   };
 
@@ -82,6 +87,7 @@
     , post2fs
     , sling
     , summars
+    , lwk_cli
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -97,7 +103,7 @@
       post2fs_pkg = post2fs.packages.${system};
       sling_pkg = sling.packages.${system};
       summars_pkg = summars.packages.${system};
-
+      lwk_cli_pkg = lwk_cli.packages.${system};
 
     in
     {
@@ -114,6 +120,7 @@
       packages.post2fs = post2fs_pkg.default;
       packages.sling = sling_pkg.default;
       packages.summars = summars_pkg.default;
+      packages.lwk_cli = lwk_cli_pkg.default;
 
     });
 }
