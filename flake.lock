@@ -392,10 +392,10 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1728045692,
-        "narHash": "sha256-9hyeB1aLL94i4Xpkm9PNOKjDEFMiskA+nhMlIXTCXHE=",
+        "lastModified": 1728047170,
+        "narHash": "sha256-urW9k6yNqgyELxKXFyHnVnTAmW+GWbyoV+gHgfOLvE4=",
         "ref": "refs/heads/master",
-        "rev": "a049077aa0330effc6d9b830060f968314688291",
+        "rev": "ff2d4a6bb1ad6070ea40b04a2e84f0a350b75244",
         "revCount": 129,
         "type": "git",
         "url": "ssh://git@git.casatta.it/git/esplora-enterprise-monitoring"
