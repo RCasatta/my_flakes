@@ -443,11 +443,11 @@
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1727968499,
-        "narHash": "sha256-56lp3dxqv9goNt01oQUl11lym08oSBBW7ceTgzINJNo=",
+        "lastModified": 1728654186,
+        "narHash": "sha256-aZqa5/GY5KttfDpfZkIyk86UZFtIH8XvHlwsNrOATCo=",
         "owner": "RCasatta",
         "repo": "fbbe",
-        "rev": "fd221bb1f2c8f0d54b8b97280afaaeea0718a4fd",
+        "rev": "b3ffc2b36c129d85608d877c605a14eab5a8282d",
         "type": "github"
       },
       "original": {
