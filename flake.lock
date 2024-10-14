@@ -585,11 +585,11 @@
         "rust-overlay": "rust-overlay_6"
       },
       "locked": {
-        "lastModified": 1728483356,
-        "narHash": "sha256-ivaV5gYM9asvz319zXTZweVuJrzr4VLLg0P/97P+0zQ=",
+        "lastModified": 1728894785,
+        "narHash": "sha256-46HJYn1DJCp1+L+hUs8H90IkOsz2BDJVuYJI/pI/Jk4=",
         "owner": "blockstream",
         "repo": "lwk",
-        "rev": "dd0247ce296e66fb667769ecf9f46aedd655f449",
+        "rev": "9ddd20a806625bb40cd063ad61d80d106809a9fd",
         "type": "github"
       },
       "original": {
