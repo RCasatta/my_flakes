@@ -418,11 +418,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1719494671,
-        "narHash": "sha256-+C7sYxSy8JxfLMSaua8jWkiy4pH3hAEr+aBtOSG1Jdc=",
+        "lastModified": 1729007983,
+        "narHash": "sha256-SW0hKsOXBC6jQ7Dfx+wxZDCWqS+x+iMp99SYhF4qw50=",
         "owner": "RCasatta",
         "repo": "eternitywall",
-        "rev": "524c0d546c55b91374231346c264c4ac0c3940f1",
+        "rev": "60516b878042a3f103084cfb20ac1ca2fdc9f48a",
         "type": "github"
       },
       "original": {
