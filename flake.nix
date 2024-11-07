@@ -73,6 +73,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    multiqr = {
+      url = "github:RCasatta/multiqr";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
 
   };
 
@@ -94,6 +99,7 @@
     , summars
     , lwk_cli
     , dinasty
+    , multiqr
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -111,6 +117,7 @@
       summars_pkg = summars.packages.${system};
       lwk_cli_pkg = lwk_cli.packages.${system};
       dinasty_pkg = dinasty.packages.${system};
+      multiqr_pkg = multiqr.packages.${system};
 
     in
     {
@@ -129,6 +136,7 @@
       packages.summars = summars_pkg.default;
       packages.lwk_cli = lwk_cli_pkg.default;
       packages.dinasty = dinasty_pkg.default;
+      packages.multiqr = multiqr_pkg.default;
 
     });
 }
