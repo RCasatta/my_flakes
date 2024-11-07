@@ -78,6 +78,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    firma2 = {
+      url = "github:RCasatta/firma2";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
 
   };
 
@@ -100,6 +105,7 @@
     , lwk_cli
     , dinasty
     , multiqr
+    , firma2
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -118,6 +124,7 @@
       lwk_cli_pkg = lwk_cli.packages.${system};
       dinasty_pkg = dinasty.packages.${system};
       multiqr_pkg = multiqr.packages.${system};
+      firma2_pkg = multiqr.packages.${system};
 
     in
     {
@@ -137,6 +144,7 @@
       packages.lwk_cli = lwk_cli_pkg.default;
       packages.dinasty = dinasty_pkg.default;
       packages.multiqr = multiqr_pkg.default;
+      packages.firma2 = firma2_pkg.default;
 
     });
 }
