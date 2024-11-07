@@ -68,6 +68,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    dinasty = {
+      url = "git+ssh://git@git.casatta.it/git/dinasty";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
 
   };
 
@@ -88,6 +93,7 @@
     , sling
     , summars
     , lwk_cli
+    , dinasty
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -104,6 +110,7 @@
       sling_pkg = sling.packages.${system};
       summars_pkg = summars.packages.${system};
       lwk_cli_pkg = lwk_cli.packages.${system};
+      dinasty_pkg = dinasty.packages.${system};
 
     in
     {
@@ -121,6 +128,7 @@
       packages.sling = sling_pkg.default;
       packages.summars = summars_pkg.default;
       packages.lwk_cli = lwk_cli_pkg.default;
+      packages.dinasty = dinasty_pkg.default;
 
     });
 }
