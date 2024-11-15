@@ -9,7 +9,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     fbbe = {
-      url = "github:RCasatta/fbbe";
+      url = "github:RCasatta/fbbe/jemalloc";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
