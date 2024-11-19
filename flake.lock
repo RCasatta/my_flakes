@@ -60,11 +60,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1732006825,
-        "narHash": "sha256-ARRJHzJk6Xxn5ldVHPn635AE6AYUpJ+VqwFB+VKQQE8=",
+        "lastModified": 1732015138,
+        "narHash": "sha256-PCzURXEgGECYrufOj3dSDCFDGW4dbYCucSLbm+VDfl4=",
         "owner": "RCasatta",
         "repo": "blocks_iterator",
-        "rev": "36bbcbd208410630e153d057adf2aaa1eab1dfc8",
+        "rev": "7b419419b917572a127b4240790ef874a4d4b913",
         "type": "github"
       },
       "original": {
