@@ -735,11 +735,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1731183630,
-        "narHash": "sha256-tFX74aZH08J2/JY9oQUfaji+MRXUCOaGE/3WrWZ1xog=",
+        "lastModified": 1732826907,
+        "narHash": "sha256-8A58F+ciH+11StnaZ1YqiF359IlNi3GZERGunUlRkTA=",
         "owner": "RCasatta",
         "repo": "multiqr",
-        "rev": "2db35045d3bd7dbe8fa0591adb4b015b4546e25c",
+        "rev": "51da7c548723e9420308f252f4fced4d7ebc2e4c",
         "type": "github"
       },
       "original": {
