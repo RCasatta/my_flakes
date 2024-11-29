@@ -124,7 +124,7 @@
       lwk_cli_pkg = lwk_cli.packages.${system};
       dinasty_pkg = dinasty.packages.${system};
       multiqr_pkg = multiqr.packages.${system};
-      firma2_pkg = multiqr.packages.${system};
+      firma2_pkg = firma2.packages.${system};
 
     in
     {
