@@ -95,6 +95,27 @@
       }
     },
     "crane_10": {
+      "inputs": {
+        "nixpkgs": [
+          "lwk_cli",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1713979152,
+        "narHash": "sha256-apdecPuh8SOQnkEET/kW/UcfjCRb8JbV5BKjoH+DcP4=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "a5eca68a2cf11adb32787fc141cddd29ac8eb79c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
+    "crane_11": {
       "locked": {
         "lastModified": 1730652660,
         "narHash": "sha256-+XVYfmVXAiYA0FZT7ijHf555dxCe+AoAT5A6RU+6vSo=",
@@ -109,7 +130,7 @@
         "type": "github"
       }
     },
-    "crane_11": {
+    "crane_12": {
       "inputs": {
         "nixpkgs": [
           "opreturn_org",
@@ -130,7 +151,7 @@
         "type": "github"
       }
     },
-    "crane_12": {
+    "crane_13": {
       "inputs": {
         "nixpkgs": [
           "pay2email",
@@ -151,7 +172,7 @@
         "type": "github"
       }
     },
-    "crane_13": {
+    "crane_14": {
       "inputs": {
         "nixpkgs": [
           "post2fs",
@@ -172,7 +193,7 @@
         "type": "github"
       }
     },
-    "crane_14": {
+    "crane_15": {
       "inputs": {
         "nixpkgs": [
           "sling",
@@ -193,7 +214,7 @@
         "type": "github"
       }
     },
-    "crane_15": {
+    "crane_16": {
       "inputs": {
         "nixpkgs": [
           "summars",
@@ -214,7 +235,7 @@
         "type": "github"
       }
     },
-    "crane_16": {
+    "crane_17": {
       "locked": {
         "lastModified": 1727316705,
         "narHash": "sha256-/mumx8AQ5xFuCJqxCIOFCHTVlxHkMT21idpbgbm/TIE=",
@@ -348,11 +369,11 @@
     },
     "crane_8": {
       "locked": {
-        "lastModified": 1727316705,
-        "narHash": "sha256-/mumx8AQ5xFuCJqxCIOFCHTVlxHkMT21idpbgbm/TIE=",
+        "lastModified": 1730652660,
+        "narHash": "sha256-+XVYfmVXAiYA0FZT7ijHf555dxCe+AoAT5A6RU+6vSo=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "5b03654ce046b5167e7b0bccbd8244cb56c16f0e",
+        "rev": "a4ca93905455c07cb7e3aca95d4faf7601cba458",
         "type": "github"
       },
       "original": {
@@ -362,18 +383,12 @@
       }
     },
     "crane_9": {
-      "inputs": {
-        "nixpkgs": [
-          "lwk_cli",
-          "nixpkgs"
-        ]
-      },
       "locked": {
-        "lastModified": 1713979152,
-        "narHash": "sha256-apdecPuh8SOQnkEET/kW/UcfjCRb8JbV5BKjoH+DcP4=",
+        "lastModified": 1727316705,
+        "narHash": "sha256-/mumx8AQ5xFuCJqxCIOFCHTVlxHkMT21idpbgbm/TIE=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "a5eca68a2cf11adb32787fc141cddd29ac8eb79c",
+        "rev": "5b03654ce046b5167e7b0bccbd8244cb56c16f0e",
         "type": "github"
       },
       "original": {
@@ -619,16 +634,17 @@
         "flake-utils": [
           "flake-utils"
         ],
+        "multiqr-input": "multiqr-input",
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1731078229,
-        "narHash": "sha256-g4PW65POStwpaj7Xlz58t9or1PVGE+J1G1IGSMYogDc=",
+        "lastModified": 1731925322,
+        "narHash": "sha256-8kXyKqKK2DwzUgeW5uWFS83IuZmRQJC+Mtxz+vQbWB0=",
         "owner": "RCasatta",
         "repo": "firma2",
-        "rev": "ee81370ad69a8279ce9ca2d4190aa7ff66b632a4",
+        "rev": "30d574ca06b8931a3b710a7bafb4f245181fbe24",
         "type": "github"
       },
       "original": {
@@ -671,9 +687,27 @@
         "type": "github"
       }
     },
+    "flake-utils_2": {
+      "inputs": {
+        "systems": "systems_2"
+      },
+      "locked": {
+        "lastModified": 1726560853,
+        "narHash": "sha256-X6rJYSESBVr3hBoH0WbKE5KvhPU5bloyZ2L4K60/fPQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c1dfcf08411b08f6b8615f7d8971a2bfa81d5e8a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "lightdash": {
       "inputs": {
-        "crane": "crane_8",
+        "crane": "crane_9",
         "flake-utils": [
           "flake-utils"
         ],
@@ -698,7 +732,7 @@
     },
     "lwk_cli": {
       "inputs": {
-        "crane": "crane_9",
+        "crane": "crane_10",
         "electrs-flake": "electrs-flake",
         "flake-utils": [
           "flake-utils"
@@ -726,7 +760,7 @@
     },
     "multiqr": {
       "inputs": {
-        "crane": "crane_10",
+        "crane": "crane_11",
         "flake-utils": [
           "flake-utils"
         ],
@@ -740,6 +774,29 @@
         "owner": "RCasatta",
         "repo": "multiqr",
         "rev": "51da7c548723e9420308f252f4fced4d7ebc2e4c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "repo": "multiqr",
+        "type": "github"
+      }
+    },
+    "multiqr-input": {
+      "inputs": {
+        "crane": "crane_8",
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "firma2",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1731183630,
+        "narHash": "sha256-tFX74aZH08J2/JY9oQUfaji+MRXUCOaGE/3WrWZ1xog=",
+        "owner": "RCasatta",
+        "repo": "multiqr",
+        "rev": "2db35045d3bd7dbe8fa0591adb4b015b4546e25c",
         "type": "github"
       },
       "original": {
@@ -766,7 +823,7 @@
     "opreturn_org": {
       "inputs": {
         "advisory-db": "advisory-db_2",
-        "crane": "crane_11",
+        "crane": "crane_12",
         "fenix": "fenix_2",
         "flake-utils": [
           "flake-utils"
@@ -791,7 +848,7 @@
     },
     "pay2email": {
       "inputs": {
-        "crane": "crane_12",
+        "crane": "crane_13",
         "flake-utils": [
           "flake-utils"
         ],
@@ -816,7 +873,7 @@
     "post2fs": {
       "inputs": {
         "advisory-db": "advisory-db_3",
-        "crane": "crane_13",
+        "crane": "crane_14",
         "fenix": "fenix_3",
         "flake-utils": [
           "flake-utils"
@@ -882,7 +939,7 @@
         "eternitywall": "eternitywall",
         "fbbe": "fbbe",
         "firma2": "firma2",
-        "flake-utils": "flake-utils",
+        "flake-utils": "flake-utils_2",
         "lightdash": "lightdash",
         "lwk_cli": "lwk_cli",
         "multiqr": "multiqr",
@@ -1081,7 +1138,7 @@
     },
     "sling": {
       "inputs": {
-        "crane": "crane_14",
+        "crane": "crane_15",
         "flake-utils": [
           "flake-utils"
         ],
@@ -1105,7 +1162,7 @@
     },
     "summars": {
       "inputs": {
-        "crane": "crane_15",
+        "crane": "crane_16",
         "flake-utils": [
           "flake-utils"
         ],
@@ -1142,9 +1199,24 @@
         "type": "github"
       }
     },
+    "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
     "waterfalls": {
       "inputs": {
-        "crane": "crane_16",
+        "crane": "crane_17",
         "flake-utils": [
           "flake-utils"
         ],
