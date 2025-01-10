@@ -1061,16 +1061,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1736496330,
-        "narHash": "sha256-X+LvSEmgNpViqmB8yJ9r8Z8NfO3vTwvDGID3H3JQ/dc=",
+        "lastModified": 1736500028,
+        "narHash": "sha256-DBqNkd+79gcsSe/yHEUaqR1O2wITAzOrq5jjEi/p6Yg=",
         "owner": "RCasatta",
         "repo": "scriptpubkeys_per_block",
-        "rev": "df9651a923b71a538fb4385738853e2d281a2e5a",
+        "rev": "216fb180b0cd44bf43c4c544587d0ad1bbf07476",
         "type": "github"
       },
       "original": {
         "owner": "RCasatta",
-        "ref": "nix",
+        "ref": "stdout",
         "repo": "scriptpubkeys_per_block",
         "type": "github"
       }
