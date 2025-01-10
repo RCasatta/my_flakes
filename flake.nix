@@ -68,11 +68,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
-    dinasty = {
-      url = "git+ssh://git@git.casatta.it/git/dinasty";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
+    #dinasty = {
+    #  url = "git+ssh://git@git.casatta.it/git/dinasty";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #  inputs.flake-utils.follows = "flake-utils";
+    #};
     multiqr = {
       url = "github:RCasatta/multiqr";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -80,6 +80,11 @@
     };
     firma2 = {
       url = "github:RCasatta/firma2";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
+    scriptpubkeys_per_block = {
+      url = "github:RCasatta/scriptpubkeys_per_block/nix";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
@@ -103,9 +108,10 @@
     , sling
     , summars
     , lwk_cli
-    , dinasty
+    #, dinasty
     , multiqr
     , firma2
+    , scriptpubkeys_per_block
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -122,9 +128,10 @@
       sling_pkg = sling.packages.${system};
       summars_pkg = summars.packages.${system};
       lwk_cli_pkg = lwk_cli.packages.${system};
-      dinasty_pkg = dinasty.packages.${system};
+      #dinasty_pkg = dinasty.packages.${system};
       multiqr_pkg = multiqr.packages.${system};
       firma2_pkg = firma2.packages.${system};
+      scriptpubkeys_per_block_pkg = scriptpubkeys_per_block.packages.${system};
 
     in
     {
@@ -142,9 +149,10 @@
       packages.sling = sling_pkg.default;
       packages.summars = summars_pkg.default;
       packages.lwk_cli = lwk_cli_pkg.default;
-      packages.dinasty = dinasty_pkg.default;
+      #packages.dinasty = dinasty_pkg.default;
       packages.multiqr = multiqr_pkg.default;
       packages.firma2 = firma2_pkg.default;
+      packages.scriptpubkeys_per_block = scriptpubkeys_per_block_pkg.default;
 
     });
 }
