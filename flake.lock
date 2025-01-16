@@ -60,11 +60,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1736956148,
-        "narHash": "sha256-lh94AqQ7RbI78u9mjVq3W1JQTgAmPc7ePw4HVrkUUCU=",
+        "lastModified": 1737031866,
+        "narHash": "sha256-+tGtRNVNn7l1Zy7N1/MyAf9VvoJi4bEr5iVGbFCa4i8=",
         "owner": "RCasatta",
         "repo": "blocks_iterator",
-        "rev": "cd9e757b0ded989f51333d037f4cbbb3906bb0f4",
+        "rev": "06c9c5d672cef9b9bb59b14eab63e707c6b62762",
         "type": "github"
       },
       "original": {
@@ -478,11 +478,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1736517329,
-        "narHash": "sha256-SzrRNA0/8Gsh7oFzrRnfzizL4F2PsBxN9zVMVNc4tdw=",
+        "lastModified": 1737032587,
+        "narHash": "sha256-dcQKlQCGCXhCPd0NQw3xLi9e9QUbI8jIp8rO6JLDbnA=",
         "owner": "RCasatta",
         "repo": "eternitywall",
-        "rev": "2f809326d9c97718c4285bcf4b129297b3dda648",
+        "rev": "68e4553ededd3c4d00a1cd225e8d157180be5f5c",
         "type": "github"
       },
       "original": {
@@ -776,11 +776,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1736517363,
-        "narHash": "sha256-Bo/OmDpnIqMsa1YtC1/TecBWiqpemS+LLzalOlkjHWI=",
+        "lastModified": 1737035009,
+        "narHash": "sha256-/1oyp8S/iUgLUhmEEo9+dO+K3SA7WzT/1Qed7oJwSas=",
         "owner": "RCasatta",
         "repo": "opreturn_org",
-        "rev": "902f960b2c1f0acc4c3a0ae7da8ecf66d4da376f",
+        "rev": "680b87b6ff9639b916c13bb3a96e2f88113572b5",
         "type": "github"
       },
       "original": {
@@ -1061,16 +1061,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1736500028,
-        "narHash": "sha256-DBqNkd+79gcsSe/yHEUaqR1O2wITAzOrq5jjEi/p6Yg=",
+        "lastModified": 1737035297,
+        "narHash": "sha256-4MUzwIIEoEw1YwJS+5nM1p5nAdMLzemZORUjB3CcfXM=",
         "owner": "RCasatta",
         "repo": "scriptpubkeys_per_block",
-        "rev": "216fb180b0cd44bf43c4c544587d0ad1bbf07476",
+        "rev": "7c07da87d604d2b038615b1e1472b7a48e4cfe1c",
         "type": "github"
       },
       "original": {
         "owner": "RCasatta",
-        "ref": "stdout",
+        "ref": "upgrade_deps",
         "repo": "scriptpubkeys_per_block",
         "type": "github"
       }

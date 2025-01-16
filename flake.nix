@@ -84,7 +84,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     scriptpubkeys_per_block = {
-      url = "github:RCasatta/scriptpubkeys_per_block/stdout";
+      url = "github:RCasatta/scriptpubkeys_per_block/upgrade_deps";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
