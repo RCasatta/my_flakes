@@ -1061,11 +1061,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1737105860,
-        "narHash": "sha256-JisP6ouVQC1S4+O3DPbYZT+FhBRxm7TPT26jfkBPf5M=",
+        "lastModified": 1737106474,
+        "narHash": "sha256-Ipa8RFlhfE/vIjGwduhfY1U6wNCLZQi+HEOr/Zwaa/w=",
         "owner": "RCasatta",
         "repo": "scriptpubkeys_per_block",
-        "rev": "07ed03e579cb17e555df7822eb77b04e6e1a35b2",
+        "rev": "fe591de299d1e149888b69fab9a43eada20cca52",
         "type": "github"
       },
       "original": {
