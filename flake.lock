@@ -60,11 +60,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1737047161,
-        "narHash": "sha256-jv3XoozWzqNbXrUOTr/C5WsqGCyiAkZJO/Gsm6MS0aE=",
+        "lastModified": 1737298120,
+        "narHash": "sha256-38B0ziH7BDoeMz5GBacOTkW/AdGIMKm+vn0Xg5tHV54=",
         "owner": "RCasatta",
         "repo": "blocks_iterator",
-        "rev": "bdfc58be2171264b8d8e20c3023dfa1ffb3c58dc",
+        "rev": "7c0c7d6df07cec4f3e8f26774f491f8a19d8d2aa",
         "type": "github"
       },
       "original": {
@@ -478,11 +478,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1737047783,
-        "narHash": "sha256-SZLwDVyA5Y04gpOQLWTr1tjla4sxLozSE43biSkNow8=",
+        "lastModified": 1737298909,
+        "narHash": "sha256-oRAKCM0/ax+2Pnoa2NeyPjRRSB0UO2w5U96UAtMRtfs=",
         "owner": "RCasatta",
         "repo": "eternitywall",
-        "rev": "6cac34bc2511cf912974cc527a03c4ec8c850b41",
+        "rev": "610c64e3308de1bdd2d3f779a9ac6f9b5982c415",
         "type": "github"
       },
       "original": {
