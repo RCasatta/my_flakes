@@ -1165,11 +1165,11 @@
         "rust-overlay": "rust-overlay_7"
       },
       "locked": {
-        "lastModified": 1738838548,
-        "narHash": "sha256-DTfSjrD+/ujYNVg/ICQbcURr3nRKlF2gUoOQ0gXRN44=",
+        "lastModified": 1738840038,
+        "narHash": "sha256-uFE0ewuvjYPBGxGALPJJUwprTsJ2gztaVofleSZ+G2I=",
         "owner": "RCasatta",
         "repo": "waterfalls",
-        "rev": "d68a7a10bef76f779e840e58d1b1084f68244c09",
+        "rev": "38f6b8c32a43dc17e28b95468f59d078b3ee3459",
         "type": "github"
       },
       "original": {
