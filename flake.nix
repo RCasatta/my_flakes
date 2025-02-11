@@ -89,6 +89,11 @@
       inputs.flake-utils.follows = "flake-utils";
     };
 
+    reverse_proxy = {
+      url = "git+ssh://git@git.casatta.it/git/blockchain_oracle?dir=reverse_proxy";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
   };
 
   outputs =
@@ -108,10 +113,11 @@
     , sling
     , summars
     , lwk_cli
-    #, dinasty
+      #, dinasty
     , multiqr
     , firma2
     , scriptpubkeys_per_block
+    , reverse_proxy
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -132,6 +138,7 @@
       multiqr_pkg = multiqr.packages.${system};
       firma2_pkg = firma2.packages.${system};
       scriptpubkeys_per_block_pkg = scriptpubkeys_per_block.packages.${system};
+      reverse_proxy_pkg = reverse_proxy.packages.${system};
 
     in
     {
@@ -153,6 +160,7 @@
       packages.multiqr = multiqr_pkg.default;
       packages.firma2 = firma2_pkg.default;
       packages.scriptpubkeys_per_block = scriptpubkeys_per_block_pkg.default;
+      packages.reverse_proxy = reverse_proxy_pkg.default;
 
     });
 }
