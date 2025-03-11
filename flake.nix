@@ -64,7 +64,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     lwk_cli = {
-      url = "github:blockstream/lwk";
+      url = "github:blockstream/lwk/remove_dev_reqwest";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
