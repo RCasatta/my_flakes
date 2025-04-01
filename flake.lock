@@ -791,11 +791,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1743487904,
-        "narHash": "sha256-4Aq9VsRl7lLm8CLccPv/38Co7uw8bLFlxLEbINnDnGY=",
+        "lastModified": 1743497333,
+        "narHash": "sha256-nYaQ/YCqJ+SWAiKeTcVlrNal7Vvvc7uc01QEbJe9TsY=",
         "owner": "RCasatta",
         "repo": "opreturn_org",
-        "rev": "622e54b060ea1ad3c1ff26df2b367e8a95fc6c0d",
+        "rev": "262ead3ea0254b7936c2522bdae4305966507a1e",
         "type": "github"
       },
       "original": {
@@ -1128,11 +1128,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1740355951,
-        "narHash": "sha256-l7TlN5iKOxGpmSfi1ZR47CfxJS+GcXMEHZ3ur+R4cY0=",
+        "lastModified": 1741725722,
+        "narHash": "sha256-hf691H3nBEIiYi4fP2FQ3XujLshaTkPIe/UVPxyRo5o=",
         "owner": "daywalker90",
         "repo": "sling",
-        "rev": "33f45bc1123096a027c1bd0e03fbc467cb754d02",
+        "rev": "9c18bfead214302a51984ad7ae8945c90232729a",
         "type": "github"
       },
       "original": {
