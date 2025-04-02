@@ -377,18 +377,12 @@
       }
     },
     "crane_9": {
-      "inputs": {
-        "nixpkgs": [
-          "lwk_cli",
-          "nixpkgs"
-        ]
-      },
       "locked": {
-        "lastModified": 1713979152,
-        "narHash": "sha256-apdecPuh8SOQnkEET/kW/UcfjCRb8JbV5BKjoH+DcP4=",
+        "lastModified": 1741481578,
+        "narHash": "sha256-JBTSyJFQdO3V8cgcL08VaBUByEU6P5kXbTJN6R0PFQo=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "a5eca68a2cf11adb32787fc141cddd29ac8eb79c",
+        "rev": "bb1c9567c43e4434f54e9481eb4b8e8e0d50f0b5",
         "type": "github"
       },
       "original": {
@@ -442,11 +436,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1714129864,
-        "narHash": "sha256-Qe07R/8qbaj5J8TSYJRxYfPY0BShFJHrCe+LuGTXf+4=",
+        "lastModified": 1738613112,
+        "narHash": "sha256-1zSAFpWrLYBC2i/TYK94E9NtZ7EbR9lF6bbbhI/LEKc=",
         "owner": "blockstream",
         "repo": "electrs",
-        "rev": "efc1fec8b0f96b5663d7257a0c2cffd8ef143219",
+        "rev": "84cd0eddd91fda2a9ed39e702fc53f976503cd9d",
         "type": "github"
       },
       "original": {
@@ -703,11 +697,11 @@
         "rust-overlay": "rust-overlay_6"
       },
       "locked": {
-        "lastModified": 1741687759,
-        "narHash": "sha256-Za5oysLi3jBDznLQxpZuqOhRAROMvRV8h6X1mqAdKXU=",
+        "lastModified": 1743073166,
+        "narHash": "sha256-tDumFUwkJJFv6a/CX7b9aWruqe3KnqvcvW7bNl1x+g8=",
         "owner": "blockstream",
         "repo": "lwk",
-        "rev": "5b2c195328b9c9f611fd9bdf8e7fe9143a91f534",
+        "rev": "eee6ae862458a941efe0a3e9496afc72cbae338e",
         "type": "github"
       },
       "original": {
@@ -765,11 +759,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1741709912,
-        "narHash": "sha256-3ArjFHEIHcwhBP8QeX/MJzgtaEwNLbr29WekHb8vE+Y=",
+        "lastModified": 1743603921,
+        "narHash": "sha256-oiso5fIAUTpBKWLXi3IgPC0uzikLzEuWx15FHNhbvok=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "e5a373457cf529b85b3565621aa4473ecabfd3ac",
+        "rev": "b09b796d1f6a53d17c68460c8dab42970a207683",
         "type": "github"
       },
       "original": {
@@ -791,11 +785,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1743535439,
-        "narHash": "sha256-clYSfJvptMogy/NMe1hpfPCzlzK+pRhkdlj6mTbYvNE=",
+        "lastModified": 1743604634,
+        "narHash": "sha256-0WFepAWPsvZ+kFvkraYru5hwcw1Uf+Uj3ij7SqPRn5Q=",
         "owner": "RCasatta",
         "repo": "opreturn_org",
-        "rev": "608bc6d5c274df0e175b98ff3d2ddd6a2af19626",
+        "rev": "43ca26f2917a0bd8c935515200679e0426c304f4",
         "type": "github"
       },
       "original": {
@@ -874,11 +868,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1713271724,
-        "narHash": "sha256-0TRBGEJROTxtv1+ISeZ+vGriAd999v6lJ1L8aFdlNV4=",
+        "lastModified": 1742551508,
+        "narHash": "sha256-gVpltnRFZzQOW9PJReg9PCKXFJzDw7ID4pr1ejFvGjo=",
         "owner": "blockstream",
         "repo": "asset_registry",
-        "rev": "f1c62fd793652827d3387e9aa4fca13c76de334e",
+        "rev": "2f2e771f99a6dd393bcb7c2b98bbd39eaa600002",
         "type": "github"
       },
       "original": {
@@ -1058,11 +1052,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1733798086,
-        "narHash": "sha256-XHIh0h84xDnjkqampyNI/r2FAkKmwbL719ZsygiJHKE=",
+        "lastModified": 1741660300,
+        "narHash": "sha256-0jldJ58sC5RjqwpwE+ER+RPMeX4Moz5im/evQ3SU/dU=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "8a19e07800d64462913f3dbf5c9a20ea7b50e6cd",
+        "rev": "ac2f556db0eb5cbba3c4f5f5989c46330f439b0b",
         "type": "github"
       },
       "original": {
@@ -1152,11 +1146,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1736521346,
-        "narHash": "sha256-Ld61Z414m+Ir8glG4T2Gybu9XSKFrD5fHcEaSr4lSMo=",
+        "lastModified": 1741732080,
+        "narHash": "sha256-7osBrTZdhzrkXgNLJ/cyWinUhIufe8q+BUVitzB7Gy8=",
         "owner": "daywalker90",
         "repo": "summars",
-        "rev": "36f3d7ca91e5566c9742cea5b0d459b2f21b8e82",
+        "rev": "90ebe200cde313c62a2d8e72757d9026cb2be679",
         "type": "github"
       },
       "original": {
