@@ -14,7 +14,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     waterfalls = {
-      url = "github:RCasatta/waterfalls";
+      url = "github:RCasatta/waterfalls/fix_history_updates";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
