@@ -1210,7 +1210,6 @@
       },
       "original": {
         "owner": "RCasatta",
-        "ref": "fix_history_updates",
         "repo": "waterfalls",
         "type": "github"
       }
