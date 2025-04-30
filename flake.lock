@@ -73,6 +73,29 @@
         "type": "github"
       }
     },
+    "btc_median_price": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1746017369,
+        "narHash": "sha256-uIEc7qTedbaEbTdh8CR/W5cdkHfMY7DpEGNBnf5QU2g=",
+        "owner": "RCasatta",
+        "repo": "btc_median_price",
+        "rev": "65dfcf312e702adaec0d5586e2f98c2e589fb2a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "repo": "btc_median_price",
+        "type": "github"
+      }
+    },
     "crane": {
       "inputs": {
         "nixpkgs": [
@@ -911,6 +934,7 @@
     "root": {
       "inputs": {
         "blocks_iterator": "blocks_iterator",
+        "btc_median_price": "btc_median_price",
         "electrs": "electrs",
         "esplora-enterprise-monitoring": "esplora-enterprise-monitoring",
         "eternitywall": "eternitywall",
