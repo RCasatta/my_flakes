@@ -123,6 +123,7 @@
     , firma2
     , scriptpubkeys_per_block
     , reverse_proxy
+    , btc_median_price
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -144,6 +145,7 @@
       firma2_pkg = firma2.packages.${system};
       scriptpubkeys_per_block_pkg = scriptpubkeys_per_block.packages.${system};
       reverse_proxy_pkg = reverse_proxy.packages.${system};
+      btc_median_price_pkg = btc_median_price.packages.${system};
 
     in
     {
@@ -166,6 +168,7 @@
       packages.firma2 = firma2_pkg.default;
       packages.scriptpubkeys_per_block = scriptpubkeys_per_block_pkg.default;
       packages.reverse_proxy = reverse_proxy_pkg.default;
+      packages.btc_median_price = btc_median_price_pkg.default;
 
     });
 }
