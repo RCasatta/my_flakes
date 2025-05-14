@@ -176,7 +176,7 @@
       packages.scriptpubkeys_per_block = scriptpubkeys_per_block_pkg.default;
       packages.reverse_proxy = reverse_proxy_pkg.default;
       packages.btc_median_price = btc_median_price_pkg.default;
-      packages.liquidex_web_socket = liquidex_websocket_pkg.default;
+      packages.liquidex_websocket = liquidex_websocket_pkg.default;
 
     });
 }
