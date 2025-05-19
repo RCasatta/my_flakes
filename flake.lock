@@ -706,29 +706,6 @@
         "type": "github"
       }
     },
-    "liquidex_websocket": {
-      "inputs": {
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1747229782,
-        "narHash": "sha256-G0iCoUZX+ETiK1uWxPaIvEUqUMjxnDu564oXzsN0wjo=",
-        "owner": "RCasatta",
-        "repo": "liquidex_websocket",
-        "rev": "3b237cfecb14198e6e43570f674c2005e09e8049",
-        "type": "github"
-      },
-      "original": {
-        "owner": "RCasatta",
-        "repo": "liquidex_websocket",
-        "type": "github"
-      }
-    },
     "lwk_cli": {
       "inputs": {
         "crane": "crane_9",
@@ -800,6 +777,29 @@
       "original": {
         "owner": "RCasatta",
         "repo": "multiqr",
+        "type": "github"
+      }
+    },
+    "nexus_relay": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1747661506,
+        "narHash": "sha256-2WgxWPJNzP6tVJBZ/omYnhEaGA/YvKK4X69s0jGNe4o=",
+        "owner": "RCasatta",
+        "repo": "nexus_relay",
+        "rev": "1a60a95c425b42873b8a7442dd695b018b89ab08",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "repo": "nexus_relay",
         "type": "github"
       }
     },
@@ -965,9 +965,9 @@
         "firma2": "firma2",
         "flake-utils": "flake-utils_2",
         "lightdash": "lightdash",
-        "liquidex_websocket": "liquidex_websocket",
         "lwk_cli": "lwk_cli",
         "multiqr": "multiqr",
+        "nexus_relay": "nexus_relay",
         "nixpkgs": "nixpkgs",
         "opreturn_org": "opreturn_org",
         "pay2email": "pay2email",

@@ -99,8 +99,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
-    liquidex_websocket = {
-      url = "github:RCasatta/liquidex_websocket";
+    nexus_relay = {
+      url = "github:RCasatta/nexus_relay";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
@@ -129,7 +129,7 @@
     , scriptpubkeys_per_block
     , reverse_proxy
     , btc_median_price
-    , liquidex_websocket
+    , nexus_relay
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -152,7 +152,7 @@
       scriptpubkeys_per_block_pkg = scriptpubkeys_per_block.packages.${system};
       reverse_proxy_pkg = reverse_proxy.packages.${system};
       btc_median_price_pkg = btc_median_price.packages.${system};
-      liquidex_websocket_pkg = liquidex_websocket.packages.${system};
+      nexus_relay_pkg = nexus_relay.packages.${system};
 
     in
     {
@@ -176,7 +176,7 @@
       packages.scriptpubkeys_per_block = scriptpubkeys_per_block_pkg.default;
       packages.reverse_proxy = reverse_proxy_pkg.default;
       packages.btc_median_price = btc_median_price_pkg.default;
-      packages.liquidex_websocket = liquidex_websocket_pkg.default;
+      packages.nexus_relay = nexus_relay_pkg.default;
 
     });
 }
