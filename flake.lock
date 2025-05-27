@@ -790,11 +790,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1748278265,
-        "narHash": "sha256-e2oNs3G1weR2wD/mGUZ/AwVHivDpPccxZ8o3ABmebu4=",
+        "lastModified": 1748344372,
+        "narHash": "sha256-I1OJwH7IAJa7Nr7T5RggfRDHQQ/FVXEEZ23nAqO9HeA=",
         "owner": "RCasatta",
         "repo": "nexus_relay",
-        "rev": "a28a2db1e8c848120edc69e5e60712b92ab3be3a",
+        "rev": "47a43d797cc3db71b72a2a6d6e9017af3a0e30b5",
         "type": "github"
       },
       "original": {
