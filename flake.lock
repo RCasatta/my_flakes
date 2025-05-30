@@ -791,11 +791,11 @@
         "rust-overlay": "rust-overlay_7"
       },
       "locked": {
-        "lastModified": 1748611481,
-        "narHash": "sha256-MrcfL4bY5WrHMHZTAzoJ4J2TBHLdH00jWF0QBuBNCFA=",
+        "lastModified": 1748629522,
+        "narHash": "sha256-kFugFrhcnPyLqVXo7sMQ7oJ6b5EOFBHAC+j4tqm04Oo=",
         "owner": "RCasatta",
         "repo": "nexus_relay",
-        "rev": "ee61270267b69c359f601f59923b34bd14b75a4b",
+        "rev": "1a7c4c0187633b435931e0f2839f5f1798ea39e5",
         "type": "github"
       },
       "original": {
