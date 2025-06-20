@@ -27,3 +27,4 @@ To update a single flake input use for example:
 ```
 nix flake lock --update-input waterfalls
 ```
+
