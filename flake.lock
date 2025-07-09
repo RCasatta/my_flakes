@@ -713,18 +713,19 @@
         "flake-utils": [
           "flake-utils"
         ],
+        "nexus_relay": "nexus_relay",
         "nixpkgs": [
           "nixpkgs"
         ],
         "registry-flake": "registry-flake",
-        "rust-overlay": "rust-overlay_6"
+        "rust-overlay": "rust-overlay_7"
       },
       "locked": {
-        "lastModified": 1744357424,
-        "narHash": "sha256-fthHJ1yS9iZxkzT2BI74wLEb+tZS75/2AQxUeBOjdO4=",
+        "lastModified": 1752051930,
+        "narHash": "sha256-Blq0D30eQH1BTEXjnJ4Zl05MUI7Jg8cuvmnsCFW0Kdk=",
         "owner": "blockstream",
         "repo": "lwk",
-        "rev": "e6613e671727853c4e4f9c95ddb7e21fdf0dabe2",
+        "rev": "e30f057e8d8ca664e0e6e3e370fd50d5d98bbb43",
         "type": "github"
       },
       "original": {
@@ -783,12 +784,38 @@
     "nexus_relay": {
       "inputs": {
         "flake-utils": [
+          "lwk_cli",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "lwk_cli",
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay_6"
+      },
+      "locked": {
+        "lastModified": 1748629522,
+        "narHash": "sha256-kFugFrhcnPyLqVXo7sMQ7oJ6b5EOFBHAC+j4tqm04Oo=",
+        "owner": "RCasatta",
+        "repo": "nexus_relay",
+        "rev": "1a7c4c0187633b435931e0f2839f5f1798ea39e5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "repo": "nexus_relay",
+        "type": "github"
+      }
+    },
+    "nexus_relay_2": {
+      "inputs": {
+        "flake-utils": [
           "flake-utils"
         ],
         "nixpkgs": [
           "nixpkgs"
         ],
-        "rust-overlay": "rust-overlay_7"
+        "rust-overlay": "rust-overlay_8"
       },
       "locked": {
         "lastModified": 1748629522,
@@ -821,6 +848,22 @@
       }
     },
     "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1744536153,
+        "narHash": "sha256-awS2zRgF4uTwrOKwwiJcByDzDOdo3Q1rPZbiHQg/N38=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "18dd725c29603f582cf1900e0d25f9f1063dbf11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
       "locked": {
         "lastModified": 1743603921,
         "narHash": "sha256-oiso5fIAUTpBKWLXi3IgPC0uzikLzEuWx15FHNhbvok=",
@@ -984,8 +1027,8 @@
         "lightdash": "lightdash",
         "lwk_cli": "lwk_cli",
         "multiqr": "multiqr",
-        "nexus_relay": "nexus_relay",
-        "nixpkgs": "nixpkgs_2",
+        "nexus_relay": "nexus_relay_2",
+        "nixpkgs": "nixpkgs_3",
         "opreturn_org": "opreturn_org",
         "pay2email": "pay2email",
         "post2fs": "post2fs",
@@ -1111,6 +1154,24 @@
     },
     "rust-overlay_6": {
       "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1748572605,
+        "narHash": "sha256-k0nhPtkVDQkVJckRw6fGIeeDBktJf1BH0i8T48o7zkk=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "405ef13a5b80a0a4d4fc87c83554423d80e5f929",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_7": {
+      "inputs": {
         "nixpkgs": [
           "lwk_cli",
           "nixpkgs"
@@ -1130,9 +1191,9 @@
         "type": "github"
       }
     },
-    "rust-overlay_7": {
+    "rust-overlay_8": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "lastModified": 1748572605,
@@ -1148,7 +1209,7 @@
         "type": "github"
       }
     },
-    "rust-overlay_8": {
+    "rust-overlay_9": {
       "inputs": {
         "nixpkgs": [
           "waterfalls",
@@ -1281,7 +1342,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "rust-overlay": "rust-overlay_8"
+        "rust-overlay": "rust-overlay_9"
       },
       "locked": {
         "lastModified": 1750414420,
