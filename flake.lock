@@ -282,6 +282,21 @@
         "type": "github"
       }
     },
+    "crane_19": {
+      "locked": {
+        "lastModified": 1727316705,
+        "narHash": "sha256-/mumx8AQ5xFuCJqxCIOFCHTVlxHkMT21idpbgbm/TIE=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "5b03654ce046b5167e7b0bccbd8244cb56c16f0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
     "crane_2": {
       "inputs": {
         "nixpkgs": [
@@ -1036,7 +1051,8 @@
         "scriptpubkeys_per_block": "scriptpubkeys_per_block",
         "sling": "sling",
         "summars": "summars",
-        "waterfalls": "waterfalls"
+        "waterfalls": "waterfalls",
+        "waterfalls_utxo_only": "waterfalls_utxo_only"
       }
     },
     "rust-overlay": {
@@ -1056,6 +1072,27 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "rev": "e7354bb9e5f68b2074e272fd5f5ac3f4848860ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_10": {
+      "inputs": {
+        "nixpkgs": [
+          "waterfalls_utxo_only",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1727317727,
+        "narHash": "sha256-yGYahXzCquyYEgf5GTtvtaN5hXbw20Ok2+o8uVxoaFs=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "a3d832f389606d7dc61a45b244c72ea472d1fcd4",
         "type": "github"
       },
       "original": {
@@ -1354,6 +1391,32 @@
       },
       "original": {
         "owner": "RCasatta",
+        "repo": "waterfalls",
+        "type": "github"
+      }
+    },
+    "waterfalls_utxo_only": {
+      "inputs": {
+        "crane": "crane_19",
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay_10"
+      },
+      "locked": {
+        "lastModified": 1752240730,
+        "narHash": "sha256-pjTpvA9hT3QP/UQ9Gp6KqjLjMqSwFU1Lo8+2e5YeUug=",
+        "owner": "RCasatta",
+        "repo": "waterfalls",
+        "rev": "7a5b685d88010f8e2ae1e62cca3350c370449a9d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "ref": "utxos_only5",
         "repo": "waterfalls",
         "type": "github"
       }
