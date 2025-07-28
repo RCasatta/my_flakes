@@ -1407,16 +1407,16 @@
         "rust-overlay": "rust-overlay_10"
       },
       "locked": {
-        "lastModified": 1752240730,
-        "narHash": "sha256-pjTpvA9hT3QP/UQ9Gp6KqjLjMqSwFU1Lo8+2e5YeUug=",
+        "lastModified": 1753707892,
+        "narHash": "sha256-Y+VaYPVEwX/ThhjZw5V/KHhDrx52/mUTH2zy1iWKsZM=",
         "owner": "RCasatta",
         "repo": "waterfalls",
-        "rev": "7a5b685d88010f8e2ae1e62cca3350c370449a9d",
+        "rev": "71b44a281fb3f5e80b28174ea28a8be65bc3b401",
         "type": "github"
       },
       "original": {
         "owner": "RCasatta",
-        "ref": "utxos_only5",
+        "ref": "utxos_only6",
         "repo": "waterfalls",
         "type": "github"
       }
