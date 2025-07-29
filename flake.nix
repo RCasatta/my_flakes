@@ -19,7 +19,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     waterfalls_utxo_only = {
-      url = "github:RCasatta/waterfalls/utxos_only6";
+      url = "github:RCasatta/waterfalls/utxos_only7";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
