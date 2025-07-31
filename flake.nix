@@ -18,11 +18,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
-    waterfalls_utxo_only = {
-      url = "github:RCasatta/waterfalls/utxos_only8";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
     eternitywall = {
       url = "github:RCasatta/eternitywall";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -118,7 +113,6 @@
     , blocks_iterator
     , fbbe
     , waterfalls
-    , waterfalls_utxo_only
     , eternitywall
     , opreturn_org
     , lightdash
@@ -142,7 +136,6 @@
       blocks_iterator_pkg = blocks_iterator.packages.${system};
       fbbe_pkg = fbbe.packages.${system};
       waterfalls_pkg = waterfalls.packages.${system};
-      waterfalls_utxo_only_pkg = waterfalls_utxo_only.packages.${system};
       eternitywall_pkg = eternitywall.packages.${system};
       opreturn_org_pkg = opreturn_org.packages.${system};
       lightdash_pkg = lightdash.packages.${system};
@@ -166,7 +159,6 @@
       packages.blocks_iterator = blocks_iterator_pkg.default;
       packages.fbbe = fbbe_pkg.default;
       packages.waterfalls = waterfalls_pkg.default;
-      packages.waterfalls_utxo_only = waterfalls_utxo_only_pkg.default;
       packages.eternitywall = eternitywall_pkg.default;
       packages.opreturn_org = opreturn_org_pkg.default;
       packages.lightdash = lightdash_pkg.default;
