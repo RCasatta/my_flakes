@@ -441,11 +441,11 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1738613112,
-        "narHash": "sha256-1zSAFpWrLYBC2i/TYK94E9NtZ7EbR9lF6bbbhI/LEKc=",
+        "lastModified": 1752677002,
+        "narHash": "sha256-lX9YPrgKlgijwVJUS/IKio+BEwAB8mI49BbUhot7318=",
         "owner": "blockstream",
         "repo": "electrs",
-        "rev": "84cd0eddd91fda2a9ed39e702fc53f976503cd9d",
+        "rev": "d314e0261597d37485e8d26f55769b2c27cca0b9",
         "type": "github"
       },
       "original": {
