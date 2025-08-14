@@ -19,7 +19,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     waterfalls_bitcoin = {
-      url = "github:RCasatta/waterfalls/reorg";
+      url = "github:RCasatta/waterfalls/reorg3";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
