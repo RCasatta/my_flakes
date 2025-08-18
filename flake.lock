@@ -239,21 +239,6 @@
     },
     "crane_16": {
       "locked": {
-        "lastModified": 1727316705,
-        "narHash": "sha256-/mumx8AQ5xFuCJqxCIOFCHTVlxHkMT21idpbgbm/TIE=",
-        "owner": "ipetkov",
-        "repo": "crane",
-        "rev": "5b03654ce046b5167e7b0bccbd8244cb56c16f0e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ipetkov",
-        "repo": "crane",
-        "type": "github"
-      }
-    },
-    "crane_17": {
-      "locked": {
         "lastModified": 1754269165,
         "narHash": "sha256-0tcS8FHd4QjbCVoxN9jI+PjHgA4vc/IjkUSp+N3zy0U=",
         "owner": "ipetkov",
@@ -963,8 +948,7 @@
         "scriptpubkeys_per_block": "scriptpubkeys_per_block",
         "sling": "sling",
         "summars": "summars",
-        "waterfalls": "waterfalls",
-        "waterfalls_bitcoin": "waterfalls_bitcoin"
+        "waterfalls": "waterfalls"
       }
     },
     "rust-overlay": {
@@ -1120,27 +1104,6 @@
         ]
       },
       "locked": {
-        "lastModified": 1727317727,
-        "narHash": "sha256-yGYahXzCquyYEgf5GTtvtaN5hXbw20Ok2+o8uVxoaFs=",
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "rev": "a3d832f389606d7dc61a45b244c72ea472d1fcd4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "type": "github"
-      }
-    },
-    "rust-overlay_9": {
-      "inputs": {
-        "nixpkgs": [
-          "waterfalls_bitcoin",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
         "lastModified": 1755485198,
         "narHash": "sha256-C3042ST2lUg0nh734gmuP4lRRIBitA6Maegg2/jYRM4=",
         "owner": "oxalica",
@@ -1269,43 +1232,18 @@
         "rust-overlay": "rust-overlay_8"
       },
       "locked": {
-        "lastModified": 1755242824,
-        "narHash": "sha256-Xo6FFTsUfvVlBltKPPvKgj1WeD7p/1ElXM5Pkzl1kvc=",
-        "owner": "RCasatta",
-        "repo": "waterfalls",
-        "rev": "e501bacf46d0903b904d858af54a64b3af9e2cef",
-        "type": "github"
-      },
-      "original": {
-        "owner": "RCasatta",
-        "repo": "waterfalls",
-        "type": "github"
-      }
-    },
-    "waterfalls_bitcoin": {
-      "inputs": {
-        "crane": "crane_17",
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "rust-overlay": "rust-overlay_9"
-      },
-      "locked": {
         "lastModified": 1755522815,
         "narHash": "sha256-4d4WbZYeNUo4c34ITgt6ozxxtM9xSARs2a02+LZd2pc=",
-        "ref": "improve_indexing",
+        "owner": "RCasatta",
+        "repo": "waterfalls",
         "rev": "2ddd843c2ee69884aa67c5696dd458e72f2f1725",
-        "revCount": 375,
-        "type": "git",
-        "url": "https://github.com/RCasatta/waterfalls"
+        "type": "github"
       },
       "original": {
+        "owner": "RCasatta",
         "ref": "improve_indexing",
-        "type": "git",
-        "url": "https://github.com/RCasatta/waterfalls"
+        "repo": "waterfalls",
+        "type": "github"
       }
     }
   },
