@@ -284,11 +284,11 @@
     },
     "crane_19": {
       "locked": {
-        "lastModified": 1727316705,
-        "narHash": "sha256-/mumx8AQ5xFuCJqxCIOFCHTVlxHkMT21idpbgbm/TIE=",
+        "lastModified": 1754269165,
+        "narHash": "sha256-0tcS8FHd4QjbCVoxN9jI+PjHgA4vc/IjkUSp+N3zy0U=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "5b03654ce046b5167e7b0bccbd8244cb56c16f0e",
+        "rev": "444e81206df3f7d92780680e45858e31d2f07a08",
         "type": "github"
       },
       "original": {
@@ -1088,11 +1088,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1727317727,
-        "narHash": "sha256-yGYahXzCquyYEgf5GTtvtaN5hXbw20Ok2+o8uVxoaFs=",
+        "lastModified": 1755485198,
+        "narHash": "sha256-C3042ST2lUg0nh734gmuP4lRRIBitA6Maegg2/jYRM4=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "a3d832f389606d7dc61a45b244c72ea472d1fcd4",
+        "rev": "aa45e63d431b28802ca4490cfc796b9e31731df7",
         "type": "github"
       },
       "original": {
@@ -1407,16 +1407,16 @@
         "rust-overlay": "rust-overlay_10"
       },
       "locked": {
-        "lastModified": 1755175524,
-        "narHash": "sha256-Cj86zzRr0J00P8mOktlm0if7l23eGpmRLip8enp0jag=",
+        "lastModified": 1755519201,
+        "narHash": "sha256-ecolcdCbrQ655AiU49PefI+JijyWM1lys8bV1f0QsjQ=",
         "owner": "RCasatta",
         "repo": "waterfalls",
-        "rev": "ad083c788151d370164a970b00ba6d2550a5a0b0",
+        "rev": "c68680762a5125203c21b3acb36253caf906cca7",
         "type": "github"
       },
       "original": {
         "owner": "RCasatta",
-        "ref": "reorg3",
+        "ref": "improve_indexing",
         "repo": "waterfalls",
         "type": "github"
       }
