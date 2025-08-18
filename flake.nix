@@ -19,7 +19,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     waterfalls_bitcoin = {
-      url = "github:RCasatta/waterfalls/improve_indexing";
+      url = "git+https://github.com/RCasatta/waterfalls?ref=improve_indexing";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };

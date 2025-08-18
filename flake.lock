@@ -1296,16 +1296,16 @@
       "locked": {
         "lastModified": 1755522815,
         "narHash": "sha256-4d4WbZYeNUo4c34ITgt6ozxxtM9xSARs2a02+LZd2pc=",
-        "owner": "RCasatta",
-        "repo": "waterfalls",
+        "ref": "improve_indexing",
         "rev": "2ddd843c2ee69884aa67c5696dd458e72f2f1725",
-        "type": "github"
+        "revCount": 375,
+        "type": "git",
+        "url": "https://github.com/RCasatta/waterfalls"
       },
       "original": {
-        "owner": "RCasatta",
         "ref": "improve_indexing",
-        "repo": "waterfalls",
-        "type": "github"
+        "type": "git",
+        "url": "https://github.com/RCasatta/waterfalls"
       }
     }
   },
