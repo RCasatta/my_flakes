@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
 
     blocks_iterator = {
@@ -43,11 +43,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
-    electrs = {
-      url = "github:blockstream/electrs";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
+    #electrs = {
+    #  url = "github:blockstream/electrs";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #  inputs.flake-utils.follows = "flake-utils";
+    #};
     esplora-enterprise-monitoring = {
       url = "git+ssh://git@git.casatta.it/git/esplora-enterprise-monitoring";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -123,7 +123,7 @@
     , opreturn_org
     , lightdash
     , pay2email
-    , electrs
+    #, electrs
     , esplora-enterprise-monitoring
     , post2fs
     , sling
@@ -147,7 +147,7 @@
       opreturn_org_pkg = opreturn_org.packages.${system};
       lightdash_pkg = lightdash.packages.${system};
       pay2email_pkg = pay2email.packages.${system};
-      electrs_pkg = electrs.packages.${system};
+      #electrs_pkg = electrs.packages.${system};
       esplora-enterprise-monitoring_pkg = esplora-enterprise-monitoring.packages.${system};
       post2fs_pkg = post2fs.packages.${system};
       sling_pkg = sling.packages.${system};
@@ -171,8 +171,8 @@
       packages.opreturn_org = opreturn_org_pkg.default;
       packages.lightdash = lightdash_pkg.default;
       packages.pay2email = pay2email_pkg.default;
-      packages.electrs = electrs_pkg.bin;
-      packages.electrs_liquid = electrs_pkg.binLiquid;
+      #packages.electrs = electrs_pkg.bin;
+      #packages.electrs_liquid = electrs_pkg.binLiquid;
       packages.esplora-enterprise-monitoring = esplora-enterprise-monitoring_pkg.default;
       packages.post2fs = post2fs_pkg.default;
       packages.sling = sling_pkg.default;
