@@ -196,18 +196,12 @@
       }
     },
     "crane_14": {
-      "inputs": {
-        "nixpkgs": [
-          "sling",
-          "nixpkgs"
-        ]
-      },
       "locked": {
-        "lastModified": 1721058578,
-        "narHash": "sha256-fs/PVa3H5dS1//4BjecWi3nitXm5fRObx0JxXIAo+JA=",
+        "lastModified": 1755537552,
+        "narHash": "sha256-Tg+P8kFIneqnQLT8E0QqlCrldtdLo1n1y619/mxRD44=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "17e5109bb1d9fb393d70fba80988f7d70d1ded1a",
+        "rev": "3c40c97e1881fff381e4615e82557b333edf65c4",
         "type": "github"
       },
       "original": {
@@ -1153,15 +1147,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1753713499,
-        "narHash": "sha256-NPizKS5JL9OXkzBZsi6cTLIJhpCyFR7VJ9HYhcZsMhk=",
-        "owner": "daywalker90",
+        "lastModified": 1755611656,
+        "narHash": "sha256-bTlraux8QX+lhxtNZdwnWTg/4gsZGGhFY3KVm6vudjg=",
+        "owner": "RCasatta",
         "repo": "sling",
-        "rev": "4fcaf9fa2b2d8b583e6ee5d85db6f9d0702374b2",
+        "rev": "0b0c3f8c3fc068eb89580206cc336f282b9d062c",
         "type": "github"
       },
       "original": {
-        "owner": "daywalker90",
+        "owner": "RCasatta",
+        "ref": "nix-update",
         "repo": "sling",
         "type": "github"
       }
