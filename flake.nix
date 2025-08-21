@@ -14,7 +14,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     waterfalls = {
-      url = "github:RCasatta/waterfalls/zstd";
+      url = "github:RCasatta/waterfalls/less_alloc";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
