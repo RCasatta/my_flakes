@@ -38,6 +38,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    lightdash_new = {
+      url = "github:RCasatta/lightdash/new";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
     pay2email = {
       url = "github:RCasatta/pay2email";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -123,6 +128,7 @@
     , eternitywall
     , opreturn_org
     , lightdash
+    , lightdash_new
     , pay2email
     #, electrs
     , esplora-enterprise-monitoring
@@ -147,6 +153,7 @@
       eternitywall_pkg = eternitywall.packages.${system};
       opreturn_org_pkg = opreturn_org.packages.${system};
       lightdash_pkg = lightdash.packages.${system};
+      lightdash_new_pkg = lightdash_new.packages.${system};
       pay2email_pkg = pay2email.packages.${system};
       #electrs_pkg = electrs.packages.${system};
       esplora-enterprise-monitoring_pkg = esplora-enterprise-monitoring.packages.${system};
@@ -171,6 +178,7 @@
       packages.eternitywall = eternitywall_pkg.default;
       packages.opreturn_org = opreturn_org_pkg.default;
       packages.lightdash = lightdash_pkg.default;
+      packages.lightdash_new = lightdash_new_pkg.default;
       packages.pay2email = pay2email_pkg.default;
       #packages.electrs = electrs_pkg.bin;
       #packages.electrs_liquid = electrs_pkg.binLiquid;
