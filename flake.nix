@@ -115,6 +115,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    nexus_relay_new = {
+      url = "github:RCasatta/nexus_relay/new";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
   };
 
   outputs =
@@ -143,6 +148,7 @@
       #, reverse_proxy
     , btc_median_price
     , nexus_relay
+    , nexus_relay_new
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -168,6 +174,7 @@
       # reverse_proxy_pkg = reverse_proxy.packages.${system};
       btc_median_price_pkg = btc_median_price.packages.${system};
       nexus_relay_pkg = nexus_relay.packages.${system};
+      nexus_relay_new_pkg = nexus_relay_new.packages.${system};
 
     in
     {
@@ -194,6 +201,7 @@
       #packages.reverse_proxy = reverse_proxy_pkg.default;
       packages.btc_median_price = btc_median_price_pkg.default;
       packages.nexus_relay = nexus_relay_pkg.default;
+      packages.nexus_relay_new = nexus_relay_new_pkg.default;
 
     });
 }
