@@ -1387,11 +1387,11 @@
         "rust-overlay": "rust-overlay_10"
       },
       "locked": {
-        "lastModified": 1757600462,
-        "narHash": "sha256-yChhw0SDZFNpLGqn5XrGz8aJIu3y0FPsmj23qnl3uZY=",
+        "lastModified": 1757617158,
+        "narHash": "sha256-nA56f6RwKO0s4dHvIBl2oTtBrlhEsEN5sK29l1Nzdhk=",
         "owner": "RCasatta",
         "repo": "waterfalls",
-        "rev": "e27f1e12db69e05e6d7bbe6672849c13ee6ea771",
+        "rev": "ecf63a0d366ee53869c050514a5fec303cc505f8",
         "type": "github"
       },
       "original": {
@@ -1412,11 +1412,11 @@
         "rust-overlay": "rust-overlay_11"
       },
       "locked": {
-        "lastModified": 1757616429,
-        "narHash": "sha256-N9/I23L2dQ/VpI53qB/kDNPdvim393NygvLoSiT/UcQ=",
+        "lastModified": 1757617158,
+        "narHash": "sha256-nA56f6RwKO0s4dHvIBl2oTtBrlhEsEN5sK29l1Nzdhk=",
         "owner": "RCasatta",
         "repo": "waterfalls",
-        "rev": "b0d2a1265bd1d0bf6eba5bf02bb9a1d20e02e64b",
+        "rev": "ecf63a0d366ee53869c050514a5fec303cc505f8",
         "type": "github"
       },
       "original": {
