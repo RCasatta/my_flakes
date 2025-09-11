@@ -18,11 +18,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
-    #waterfalls_bitcoin = {
-    #  url = "git+https://github.com/RCasatta/waterfalls?ref=improve_indexing";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #  inputs.flake-utils.follows = "flake-utils";
-    #};
+    waterfalls2 = {
+      url = "github:RCasatta/waterfalls";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
     eternitywall = {
       url = "github:RCasatta/eternitywall";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -129,7 +129,7 @@
     , blocks_iterator
     , fbbe
     , waterfalls
-    #, waterfalls_bitcoin
+    , waterfalls2
     , eternitywall
     , opreturn_org
     , lightdash
@@ -155,7 +155,7 @@
       blocks_iterator_pkg = blocks_iterator.packages.${system};
       fbbe_pkg = fbbe.packages.${system};
       waterfalls_pkg = waterfalls.packages.${system};
-      #waterfalls_bitcoin_pkg = waterfalls_bitcoin.packages.${system};
+      waterfalls2_pkg = waterfalls2.packages.${system};
       eternitywall_pkg = eternitywall.packages.${system};
       opreturn_org_pkg = opreturn_org.packages.${system};
       lightdash_pkg = lightdash.packages.${system};
@@ -181,7 +181,7 @@
       packages.blocks_iterator = blocks_iterator_pkg.default;
       packages.fbbe = fbbe_pkg.default;
       packages.waterfalls = waterfalls_pkg.default;
-      #packages.waterfalls_bitcoin = waterfalls_bitcoin_pkg.default;
+      packages.waterfalls2 = waterfalls2_pkg.default;
       packages.eternitywall = eternitywall_pkg.default;
       packages.opreturn_org = opreturn_org_pkg.default;
       packages.lightdash = lightdash_pkg.default;
