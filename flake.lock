@@ -1412,11 +1412,11 @@
         "rust-overlay": "rust-overlay_11"
       },
       "locked": {
-        "lastModified": 1757682387,
-        "narHash": "sha256-R0CgOOwEeRAjbp0NDtSUK5YG9sRAK7H4FeSJGpEFLHk=",
+        "lastModified": 1757694928,
+        "narHash": "sha256-uGpDaF5PKXbsDI0Rww6g2jCj6pzfSFFnHPNIa7+Xh2o=",
         "owner": "RCasatta",
         "repo": "waterfalls",
-        "rev": "5bdad65af5d51ee13751268a23099ab9de68acd9",
+        "rev": "5400dc7a54a97b89c752d3178700e7b99bc58ab6",
         "type": "github"
       },
       "original": {
