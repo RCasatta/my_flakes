@@ -19,7 +19,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     waterfalls2 = {
-      url = "github:RCasatta/waterfalls";
+      url = "github:RCasatta/waterfalls/outpoint";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
