@@ -473,11 +473,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1761136896,
-        "narHash": "sha256-5NBNm0b6Z6hBsoiiMJWD7hO+ndHr1e4FXN/rzuXPb0k=",
+        "lastModified": 1761206262,
+        "narHash": "sha256-dNQdpg8MhjjwfDvmV7ixCGKgOrj/xmMkx7NHJuXDPgU=",
         "owner": "RCasatta",
         "repo": "eternitywall",
-        "rev": "a316bf2ea085db4759149be6cc9d8d92a7e1040e",
+        "rev": "9782d74ecdb96650d6e52d04f5aa66a95d386992",
         "type": "github"
       },
       "original": {
@@ -922,11 +922,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1756110498,
-        "narHash": "sha256-resVzfabvVTYRhyjpIKMF8H3AYSfyLv21SMRfWjfVJo=",
+        "lastModified": 1761206285,
+        "narHash": "sha256-/MPpj5Y903HpeBOOWwR4VQPquOThT2saN2JcHxdp6Rs=",
         "owner": "RCasatta",
         "repo": "opreturn_org",
-        "rev": "b0066c35ecab36c27e8a1a73dc613cb93ba21686",
+        "rev": "0bd2889495f5d2f438145f1c219ff5349ed0330a",
         "type": "github"
       },
       "original": {
