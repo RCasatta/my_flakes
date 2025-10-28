@@ -498,11 +498,11 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1761132248,
-        "narHash": "sha256-kQu9w0lfotViBGAdVGVK/RgVS+Doh2lINeRnBCPHK+s=",
+        "lastModified": 1761406619,
+        "narHash": "sha256-q97HLLVik7sLN/N5Ym6qkV/9KCMDAE6vwzz1ytRMunk=",
         "owner": "RCasatta",
         "repo": "fbbe",
-        "rev": "4b088330a12ed8b0157541143739c691c693cf1b",
+        "rev": "9c432779b95e7e78e1c9a6fed09b4e6446f0466b",
         "type": "github"
       },
       "original": {
@@ -922,11 +922,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1761206285,
-        "narHash": "sha256-/MPpj5Y903HpeBOOWwR4VQPquOThT2saN2JcHxdp6Rs=",
+        "lastModified": 1761685670,
+        "narHash": "sha256-Ntj/ehV1XGTES9Sj79s4dj3f6rOKLOO+7aAV9le4Wmc=",
         "owner": "RCasatta",
         "repo": "opreturn_org",
-        "rev": "0bd2889495f5d2f438145f1c219ff5349ed0330a",
+        "rev": "dfc497c21448072cd4d71bfb15e669ae2a98e328",
         "type": "github"
       },
       "original": {
