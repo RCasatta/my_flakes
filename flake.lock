@@ -922,11 +922,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1761685670,
-        "narHash": "sha256-Ntj/ehV1XGTES9Sj79s4dj3f6rOKLOO+7aAV9le4Wmc=",
+        "lastModified": 1761724430,
+        "narHash": "sha256-ZFtFc5eE3fVomLsFJncUxky+Shi1EkKWzLKo0UhtKOc=",
         "owner": "RCasatta",
         "repo": "opreturn_org",
-        "rev": "dfc497c21448072cd4d71bfb15e669ae2a98e328",
+        "rev": "3c2b536bf7eb99970f65b9d8f4dbe7c676be954e",
         "type": "github"
       },
       "original": {
