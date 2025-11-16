@@ -656,11 +656,11 @@
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1763326246,
-        "narHash": "sha256-mhIgrmGVwyjSuqEqMts1eW4wZuGZiODMNTdlsDupugo=",
+        "lastModified": 1763326622,
+        "narHash": "sha256-LOTqQ3n/PWaY4xSwK5D01k1MT0mhPenGbumNBIe5Dr8=",
         "owner": "RCasatta",
         "repo": "lightdash",
-        "rev": "7ee8422671673b32152090872ceafe3da438acd1",
+        "rev": "442e8134597c0012fbaf80466646e526c66192fa",
         "type": "github"
       },
       "original": {
