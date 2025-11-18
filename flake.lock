@@ -681,18 +681,17 @@
         "rust-overlay": "rust-overlay_5"
       },
       "locked": {
-        "lastModified": 1760276134,
-        "narHash": "sha256-R0nKGwjpcZp2DcFCTlPcYXMk6rqRCiXBUHJm9+WG430=",
-        "owner": "RCasatta",
-        "repo": "lightdash",
-        "rev": "eb523ef5a7e40f4ac5032a580685bd75d0242904",
-        "type": "github"
+        "lastModified": 1763500098,
+        "narHash": "sha256-DQiRhWIawmlqJzPmr5D0InlvFhL/GEbzxlz8q7dDjm8=",
+        "ref": "refs/heads/master",
+        "rev": "72e6b3cde3adcc1fe1c6ae2d557ec2bae443972d",
+        "revCount": 249,
+        "type": "git",
+        "url": "ssh://git@git.casatta.it/git/lightdash"
       },
       "original": {
-        "owner": "RCasatta",
-        "ref": "new",
-        "repo": "lightdash",
-        "type": "github"
+        "type": "git",
+        "url": "ssh://git@git.casatta.it/git/lightdash"
       }
     },
     "lwk_cli": {

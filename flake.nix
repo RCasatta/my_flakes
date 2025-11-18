@@ -39,7 +39,8 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     lightdash_new = {
-      url = "github:RCasatta/lightdash/new";
+      url = "git+ssh://git@git.casatta.it/git/lightdash";
+      #url = "github:RCasatta/lightdash/new";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
