@@ -12,6 +12,7 @@ pkgs.stdenv.mkDerivation {
     pkgs.gawk
     pkgs.jq
     pkgs.xz
+    pkgs.findutils
   ];
 
   # The script content using pkgs.writeScriptBin
@@ -26,7 +27,7 @@ pkgs.stdenv.mkDerivation {
 
     # --- Auto-Detect Resume Timestamp ---
     echo "Checking for previous progress in $OUTPUT_DIR..." >&2
-    LAST_MODIFIED_FILE=$(${pkgs.find}/bin/find "$OUTPUT_DIR" -maxdepth 1 -name "*.csv" -printf "%T@ %p\n" | ${pkgs.coreutils}/bin/sort -nr | ${pkgs.coreutils}/bin/head -n 1 | ${pkgs.coreutils}/bin/cut -d' ' -f2-)
+    LAST_MODIFIED_FILE=$(${pkgs.findutils}/bin/find "$OUTPUT_DIR" -maxdepth 1 -name "*.csv" -printf "%T@ %p\n" | ${pkgs.coreutils}/bin/sort -nr | ${pkgs.coreutils}/bin/head -n 1 | ${pkgs.coreutils}/bin/cut -d' ' -f2-)
 
     START_TS=0
     # ... (Rest of the resume logic, make sure to use explicit paths for coreutils/date/echo) ...
@@ -62,7 +63,7 @@ pkgs.stdenv.mkDerivation {
     '
 
     # --- Main Processing Pipeline (ensure all commands use explicit paths) ---
-    ${pkgs.find}/bin/find . -maxdepth 1 -name "*.json.xz" -printf "%T@ %p\n" | \
+    ${pkgs.findutils}/bin/find . -maxdepth 1 -name "*.json.xz" -printf "%T@ %p\n" | \
     ${pkgs.coreutils}/bin/sort -n | \
     ${pkgs.gawk}/bin/awk -v start="$START_TS" '$1 > start {print $2}' | \
     while read -r file; do
