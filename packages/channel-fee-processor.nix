@@ -30,7 +30,6 @@ pkgs.stdenv.mkDerivation {
     LAST_MODIFIED_FILE=$(${pkgs.findutils}/bin/find "$OUTPUT_DIR" -maxdepth 1 -name "*.csv" -printf "%T@ %p\n" | ${pkgs.coreutils}/bin/sort -nr | ${pkgs.coreutils}/bin/head -n 1 | ${pkgs.coreutils}/bin/cut -d' ' -f2-)
 
     START_TS=0
-    # ... (Rest of the resume logic, make sure to use explicit paths for coreutils/date/echo) ...
     if [ -z "$LAST_MODIFIED_FILE" ]; then
         echo "No previous output found. Starting from the beginning." >&2
     else
