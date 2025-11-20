@@ -71,21 +71,56 @@ pkgs.writeScriptBin "process_fees" ''
       fi
 
   done | ${pkgs.gawk}/bin/awk -F'\t' -v dir="$OUTPUT_DIR" -v header="$HEADER" '
-      $1 == "__FLUSH__" {
-          print "awk: Writing batch to disk..." > "/dev/stderr"
-          for (scid in buffer) {
-              outfile = dir "/" scid ".csv"
-              if ( !seen[scid]++ ) {
-                  if ( (getline test < outfile) < 0 ) {
-                      print header > outfile
-                  }
-                  close(outfile)
+      function write_data_point(scid, data_point,    outfile) {
+          outfile = dir "/" scid ".csv"
+          if ( !seen[scid]++ ) {
+              if ( (getline test < outfile) < 0 ) {
+                  print header > outfile
               }
-              print buffer[scid] >> outfile
               close(outfile)
           }
+          print data_point >> outfile
+          close(outfile)
+      }
+
+      function process_channel_data(scid, data_point,    fees, current_fees) {
+          # Extract fees from data_point (format: date,in_ppm,out_ppm)
+          split(data_point, parts, ",")
+          current_fees = parts[2] "," parts[3]
+
+          if (!(scid in last_fees)) {
+              # First data point for this channel
+              write_data_point(scid, data_point)
+              last_fees[scid] = current_fees
+              pending[scid] = data_point
+          } else if (current_fees != last_fees[scid]) {
+              # Fees changed - write the pending data point (last occurrence of previous fees)
+              # and the current data point (first occurrence of new fees)
+              if (scid in pending) {
+                  write_data_point(scid, pending[scid])
+              }
+              write_data_point(scid, data_point)
+              last_fees[scid] = current_fees
+              pending[scid] = data_point
+          } else {
+              # Fees unchanged - update pending to keep the most recent data point
+              pending[scid] = data_point
+          }
+      }
+
+      $1 == "__FLUSH__" {
+          print "awk: Writing optimized batch to disk..." > "/dev/stderr"
+          for (scid in buffer) {
+              # Process all buffered data points for this channel
+              split(buffer[scid], lines, "\n")
+              for (i in lines) {
+                  if (lines[i] != "") {
+                      process_channel_data(scid, lines[i])
+                  }
+              }
+          }
           delete buffer
-          print "awk: Batch write complete." > "/dev/stderr"
+          print "awk: Optimized batch write complete." > "/dev/stderr"
           next
       }
       {
@@ -97,17 +132,19 @@ pkgs.writeScriptBin "process_fees" ''
       }
       END {
           if (length(buffer) > 0) {
-              print "awk: Flushing final remnants..." > "/dev/stderr"
+              print "awk: Flushing final optimized remnants..." > "/dev/stderr"
               for (scid in buffer) {
-                  outfile = dir "/" scid ".csv"
-                  if ( !seen[scid]++ ) {
-                      if ( (getline test < outfile) < 0 ) {
-                          print header > outfile
+                  # Process all buffered data points for this channel
+                  split(buffer[scid], lines, "\n")
+                  for (i in lines) {
+                      if (lines[i] != "") {
+                          process_channel_data(scid, lines[i])
                       }
-                      close(outfile)
                   }
-                  print buffer[scid] >> outfile
-                  close(outfile)
+              }
+              # Write any remaining pending data points (the last occurrence of each fee setting)
+              for (scid in pending) {
+                  write_data_point(scid, pending[scid])
               }
           }
       }
