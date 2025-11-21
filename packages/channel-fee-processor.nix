@@ -7,7 +7,6 @@ pkgs.writeScriptBin "process_fees" ''
   OUTPUT_DIR="channel_fees"
   # We use explicit paths to ensure dependencies work without 'buildInputs'
   ${pkgs.coreutils}/bin/mkdir -p "$OUTPUT_DIR"
-  HEADER="date,in_ppm,out_ppm"
   BATCH_SIZE=30
 
   # --- Auto-Detect Resume Timestamp ---
@@ -43,10 +42,16 @@ pkgs.writeScriptBin "process_fees" ''
   | group_by(.short_channel_id) 
   | map( 
       (map({key: (.direction | tostring), value: .fee_per_millionth}) | from_entries) as $fees 
-      | {c: .[0].short_channel_id, in: $fees["1"], out: $fees["0"]} 
+      | {
+          c: .[0].short_channel_id, 
+          src: .[0].source, 
+          dst: .[0].destination, 
+          fee_src: $fees["1"], 
+          fee_dst: $fees["0"]
+        } 
     ) 
   | .[] 
-  | "\(.c)\t\($date),\(.in // "null"),\(.out // "null")"
+  | "\(.c)\t\(.src)\t\(.dst)\t\($date),\(.fee_src // "null"),\(.fee_dst // "null")"
   '
 
   # --- Main Processing Pipeline ---
@@ -70,14 +75,14 @@ pkgs.writeScriptBin "process_fees" ''
           counter=0
       fi
 
-  done | ${pkgs.gawk}/bin/awk -F'\t' -v dir="$OUTPUT_DIR" -v header="$HEADER" '
+  done | ${pkgs.gawk}/bin/awk -F'\t' -v dir="$OUTPUT_DIR" '
       $1 == "__FLUSH__" {
           print "awk: Writing batch to disk..." > "/dev/stderr"
           for (scid in buffer) {
               outfile = dir "/" scid ".csv"
               if ( !seen[scid]++ ) {
                   if ( (getline test < outfile) < 0 ) {
-                      print header > outfile
+                      print "date," headers[scid] > outfile
                   }
                   close(outfile)
               }
@@ -89,10 +94,19 @@ pkgs.writeScriptBin "process_fees" ''
           next
       }
       {
-          if (buffer[$1] == "") {
-              buffer[$1] = $2
+          scid = $1
+          src = $2
+          dst = $3
+          data = $4
+          
+          if (headers[scid] == "") {
+              headers[scid] = src "," dst
+          }
+          
+          if (buffer[scid] == "") {
+              buffer[scid] = data
           } else {
-              buffer[$1] = buffer[$1] "\n" $2
+              buffer[scid] = buffer[scid] "\n" data
           }
       }
       END {
@@ -102,7 +116,7 @@ pkgs.writeScriptBin "process_fees" ''
                   outfile = dir "/" scid ".csv"
                   if ( !seen[scid]++ ) {
                       if ( (getline test < outfile) < 0 ) {
-                          print header > outfile
+                          print "date," headers[scid] > outfile
                       }
                       close(outfile)
                   }
