@@ -38,7 +38,8 @@ pkgs.writeScriptBin "process_fees" ''
 
   # --- JQ Script ---
   JQ_SCRIPT='
-  .channels 
+  (.channels | map(.last_update) | max) as $max_date
+  | .channels 
   | group_by(.short_channel_id) 
   | map( 
       (map({key: (.direction | tostring), value: .fee_per_millionth}) | from_entries) as $fees 
@@ -51,7 +52,7 @@ pkgs.writeScriptBin "process_fees" ''
         } 
     ) 
   | .[] 
-  | "\(.c)\t\(.src)\t\(.dst)\t\($date),\(.fee_src // "null"),\(.fee_dst // "null")"
+  | "\(.c)\t\(.src)\t\(.dst)\t\($max_date),\(.fee_src // "null"),\(.fee_dst // "null")"
   '
 
   # --- Main Processing Pipeline ---
@@ -61,13 +62,11 @@ pkgs.writeScriptBin "process_fees" ''
   ${pkgs.gawk}/bin/awk -v start="$START_TS" '$1 > start {print $2}' | \
   while read -r file; do
       
-      DATE=$(${pkgs.coreutils}/bin/stat -c %Y "$file")
-      
-      ${pkgs.xz}/bin/xzcat "$file" | ${pkgs.jq}/bin/jq -r --arg date "$DATE" "$JQ_SCRIPT"
+      ${pkgs.xz}/bin/xzcat "$file" | ${pkgs.jq}/bin/jq -r "$JQ_SCRIPT"
       
       ((counter++))
       
-      echo "Buffered: $file ($DATE) [Batch: $counter/$BATCH_SIZE]" >&2
+      echo "Buffered: $file [Batch: $counter/$BATCH_SIZE]" >&2
       
       if (( counter >= BATCH_SIZE )); then
           echo "__FLUSH__"
