@@ -38,8 +38,7 @@ pkgs.writeScriptBin "process_fees" ''
 
   # --- JQ Script ---
   JQ_SCRIPT='
-  (.channels | map(.last_update) | max) as $max_date
-  | .channels 
+  .channels 
   | group_by(.short_channel_id) 
   | map( 
       (map({key: (.direction | tostring), value: .fee_per_millionth}) | from_entries) as $fees 
@@ -52,21 +51,29 @@ pkgs.writeScriptBin "process_fees" ''
         } 
     ) 
   | .[] 
-  | "\(.c)\t\(.src)\t\(.dst)\t\($max_date),\(.fee_src // "null"),\(.fee_dst // "null")"
+  | "\(.c)\t\(.src)\t\(.dst)\t\($date),\(.fee_src // "null"),\(.fee_dst // "null")"
   '
 
   # --- Main Processing Pipeline ---
 
-  ${pkgs.findutils}/bin/find . -maxdepth 1 -name "*.json.xz" -printf "%T@ %p\n" | \
+  ${pkgs.findutils}/bin/find . -maxdepth 1 -name "*.json.xz" -printf "%f\n" | \
   ${pkgs.coreutils}/bin/sort -n | \
-  ${pkgs.gawk}/bin/awk -v start="$START_TS" '$1 > start {print $2}' | \
+  ${pkgs.gawk}/bin/awk -v start="$START_TS" '{
+      # Extract timestamp from filename (e.g., "1763733546.json.xz" -> "1763733546")
+      match($0, /^([0-9]+)\.json\.xz$/, arr)
+      ts = arr[1]
+      if (ts > start) print $0
+  }' | \
   while read -r file; do
       
-      ${pkgs.xz}/bin/xzcat "$file" | ${pkgs.jq}/bin/jq -r "$JQ_SCRIPT"
+      # Extract timestamp from filename to use as date
+      DATE=$(${pkgs.coreutils}/bin/basename "$file" .json.xz)
+      
+      ${pkgs.xz}/bin/xzcat "$file" | ${pkgs.jq}/bin/jq -r --arg date "$DATE" "$JQ_SCRIPT"
       
       ((counter++))
       
-      echo "Buffered: $file [Batch: $counter/$BATCH_SIZE]" >&2
+      echo "Buffered: $file (timestamp: $DATE) [Batch: $counter/$BATCH_SIZE]" >&2
       
       if (( counter >= BATCH_SIZE )); then
           echo "__FLUSH__"
