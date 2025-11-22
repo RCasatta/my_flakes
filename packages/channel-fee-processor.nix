@@ -46,8 +46,8 @@ pkgs.writeScriptBin "process_fees" ''
           c: .[0].short_channel_id, 
           src: .[0].source, 
           dst: .[0].destination, 
-          fee_src: $fees["1"], 
-          fee_dst: $fees["0"]
+          fee_src: $fees["0"], 
+          fee_dst: $fees["1"]
         } 
     ) 
   | .[] 
