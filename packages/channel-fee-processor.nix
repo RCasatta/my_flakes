@@ -42,16 +42,19 @@ pkgs.writeScriptBin "process_fees" ''
   | group_by(.short_channel_id) 
   | map( 
       (map({key: (.direction | tostring), value: .fee_per_millionth}) | from_entries) as $fees 
+      | (map({key: (.direction | tostring), value: .htlc_maximum_msat}) | from_entries) as $htlc 
       | {
           c: .[0].short_channel_id, 
           src: .[0].source, 
           dst: .[0].destination, 
           fee_src: $fees["0"], 
-          fee_dst: $fees["1"]
+          fee_dst: $fees["1"],
+          htlc_src: $htlc["0"],
+          htlc_dst: $htlc["1"]
         } 
     ) 
   | .[] 
-  | "\(.c)\t\(.src)\t\(.dst)\t\($date),\(.fee_src // "null"),\(.fee_dst // "null")"
+  | "\(.c)\t\(.src)\t\(.dst)\t\($date),\(.fee_src // "null"),\(.fee_dst // "null"),\(.htlc_src // "null"),\(.htlc_dst // "null")"
   '
 
   # --- Main Processing Pipeline ---
@@ -106,7 +109,7 @@ pkgs.writeScriptBin "process_fees" ''
           data = $4
           
           if (headers[scid] == "") {
-              headers[scid] = src "," dst
+              headers[scid] = src "," dst ",htlc_max_0,htlc_max_1"
           }
           
           if (buffer[scid] == "") {
