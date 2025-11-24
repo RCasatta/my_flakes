@@ -153,7 +153,6 @@
     flake-utils.lib.eachDefaultSystem (system:
     let
       pkgs = import nixpkgs { inherit system; };
-      channelFeeProcessor = import ./packages/channel-fee-processor.nix { inherit pkgs; };
       blocks_iterator_pkg = blocks_iterator.packages.${system};
       fbbe_pkg = fbbe.packages.${system};
       waterfalls_pkg = waterfalls.packages.${system};
@@ -204,7 +203,6 @@
       packages.btc_median_price = btc_median_price_pkg.default;
       packages.nexus_relay = nexus_relay_pkg.default;
       packages.nexus_relay_new = nexus_relay_new_pkg.default;
-      packages.channelFeeProcessor = channelFeeProcessor;
 
     });
 }
