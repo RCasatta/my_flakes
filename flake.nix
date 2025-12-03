@@ -64,8 +64,8 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     sling = {
-      # url = "github:daywalker90/sling";
-      url = "github:RCasatta/sling/nix-update";
+      url = "github:daywalker90/sling";
+      # url = "github:RCasatta/sling/nix-update";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
