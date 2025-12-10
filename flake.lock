@@ -764,6 +764,24 @@
         "type": "github"
       }
     },
+    "naersk": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_5"
+      },
+      "locked": {
+        "lastModified": 1721727458,
+        "narHash": "sha256-r/xppY958gmZ4oTfLiHN0ZGuQ+RSTijDblVgVLFi1mw=",
+        "owner": "nix-community",
+        "repo": "naersk",
+        "rev": "3fb418eaf352498f6b6c30592e3beb63df42ef11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "naersk",
+        "type": "github"
+      }
+    },
     "nexus_relay": {
       "inputs": {
         "flake-utils": [
@@ -903,6 +921,20 @@
         "type": "github"
       }
     },
+    "nixpkgs_5": {
+      "locked": {
+        "lastModified": 1729265718,
+        "narHash": "sha256-4HQI+6LsO3kpWTYuVGIzhJs1cetFcwT7quWCk/6rqeo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ccc0c2126893dd20963580b6478d1a10a4512185",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
     "opreturn_org": {
       "inputs": {
         "advisory-db": "advisory-db_2",
@@ -1035,6 +1067,7 @@
         "scriptpubkeys_per_block": "scriptpubkeys_per_block",
         "sling": "sling",
         "summars": "summars",
+        "validating-lightning-signer": "validating-lightning-signer",
         "waterfalls": "waterfalls",
         "waterfalls2": "waterfalls2"
       }
@@ -1365,6 +1398,31 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "validating-lightning-signer": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "naersk": "naersk",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1765360188,
+        "narHash": "sha256-mYx80gGEY2D8hj+VIQ2lKNs4ieRxrMhLyyzV8Dzx2Bo=",
+        "owner": "RCasatta",
+        "repo": "validating-lightning-signer",
+        "rev": "1f629df2134c29f930a163de31ff0c64ba52c963",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "ref": "nix-package",
+        "repo": "validating-lightning-signer",
         "type": "github"
       }
     },

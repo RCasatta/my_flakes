@@ -120,6 +120,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    validating-lightning-signer = {
+      url = "github:RCasatta/validating-lightning-signer/nix-package";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
   };
 
   outputs =
@@ -149,6 +154,7 @@
     , btc_median_price
     , nexus_relay
     , nexus_relay_new
+    , validating-lightning-signer
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -176,6 +182,7 @@
       btc_median_price_pkg = btc_median_price.packages.${system};
       nexus_relay_pkg = nexus_relay.packages.${system};
       nexus_relay_new_pkg = nexus_relay_new.packages.${system};
+      validating-lightning-signer_pkg = validating-lightning-signer.packages.${system};
 
     in
     {
@@ -203,6 +210,7 @@
       packages.btc_median_price = btc_median_price_pkg.default;
       packages.nexus_relay = nexus_relay_pkg.default;
       packages.nexus_relay_new = nexus_relay_new_pkg.default;
+      packages.validating-lightning-signer = validating-lightning-signer_pkg.default;
 
     });
 }
