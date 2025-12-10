@@ -1412,11 +1412,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765360188,
-        "narHash": "sha256-mYx80gGEY2D8hj+VIQ2lKNs4ieRxrMhLyyzV8Dzx2Bo=",
+        "lastModified": 1765365014,
+        "narHash": "sha256-FICh3MwBdKcWzWBHi9v2FuszsPx//jhy12Bjmny3ixM=",
         "owner": "RCasatta",
         "repo": "validating-lightning-signer",
-        "rev": "1f629df2134c29f930a163de31ff0c64ba52c963",
+        "rev": "f031ab232718f58f048f8da323d7d44ca8c854a8",
         "type": "github"
       },
       "original": {
