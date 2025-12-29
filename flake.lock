@@ -1334,11 +1334,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1764679888,
-        "narHash": "sha256-cXGULMjAPO0sO/BpOphDXs7TlQHBH8Pak2ixUN/X6yY=",
+        "lastModified": 1766962383,
+        "narHash": "sha256-CfYWIY4lL7eDsfwHl4csH+hv9SvxBW35+Qpq5o3oNSA=",
         "owner": "daywalker90",
         "repo": "sling",
-        "rev": "e7336de774601f53e209ae9058e4b782be919890",
+        "rev": "fde430800971d71aa8c374bdbb1aecc997744866",
         "type": "github"
       },
       "original": {
