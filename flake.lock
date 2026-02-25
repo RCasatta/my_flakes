@@ -1005,6 +1005,30 @@
         "url": "ssh://git@git.casatta.it/git/post2fs"
       }
     },
+    "raggy": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay_10"
+      },
+      "locked": {
+        "lastModified": 1772010071,
+        "narHash": "sha256-2XOHP3xBNDxuPjepxKPc938/IwM6NpZuulZQcsxmIiQ=",
+        "owner": "RCasatta",
+        "repo": "raggy",
+        "rev": "0f39f1decc393ec891404ad1b59ebd10fef41552",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "repo": "raggy",
+        "type": "github"
+      }
+    },
     "registry-flake": {
       "inputs": {
         "crane": [
@@ -1058,6 +1082,7 @@
         "opreturn_org": "opreturn_org",
         "pay2email": "pay2email",
         "post2fs": "post2fs",
+        "raggy": "raggy",
         "scriptpubkeys_per_block": "scriptpubkeys_per_block",
         "sling": "sling",
         "summars": "summars",
@@ -1090,6 +1115,27 @@
     "rust-overlay_10": {
       "inputs": {
         "nixpkgs": [
+          "raggy",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1771642886,
+        "narHash": "sha256-4zOvSi0WkS2WAaoJtM28wECtS9S+L38CPYbhF+wINDA=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "85078369717bdbe1f266c9eaad5e66956fb6feea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_11": {
+      "inputs": {
+        "nixpkgs": [
           "waterfalls",
           "nixpkgs"
         ]
@@ -1108,7 +1154,7 @@
         "type": "github"
       }
     },
-    "rust-overlay_11": {
+    "rust-overlay_12": {
       "inputs": {
         "nixpkgs": [
           "waterfalls2",
@@ -1425,7 +1471,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "rust-overlay": "rust-overlay_10"
+        "rust-overlay": "rust-overlay_11"
       },
       "locked": {
         "lastModified": 1770647808,
@@ -1450,7 +1496,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "rust-overlay": "rust-overlay_11"
+        "rust-overlay": "rust-overlay_12"
       },
       "locked": {
         "lastModified": 1757694928,
