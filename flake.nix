@@ -8,6 +8,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    brokenlinks = {
+      url = "github:RCasatta/brokenlinks";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
     fbbe = {
       url = "github:RCasatta/fbbe";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -137,6 +142,7 @@
     , nixpkgs
     , flake-utils
     , blocks_iterator
+    , brokenlinks
     , fbbe
     , waterfalls
     , waterfalls2
@@ -166,6 +172,7 @@
     let
       pkgs = import nixpkgs { inherit system; };
       blocks_iterator_pkg = blocks_iterator.packages.${system};
+      brokenlinks_pkg = brokenlinks.packages.${system};
       fbbe_pkg = fbbe.packages.${system};
       waterfalls_pkg = waterfalls.packages.${system};
       waterfalls2_pkg = waterfalls2.packages.${system};
@@ -194,6 +201,7 @@
     in
     {
       packages.blocks_iterator = blocks_iterator_pkg.default;
+      packages.brokenlinks = brokenlinks_pkg.default;
       packages.fbbe = fbbe_pkg.default;
       packages.waterfalls = waterfalls_pkg.default;
       packages.waterfalls2 = waterfalls2_pkg.default;
