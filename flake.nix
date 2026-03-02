@@ -11,7 +11,6 @@
     brokenlinks = {
       url = "github:RCasatta/brokenlinks";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
     };
     fbbe = {
       url = "github:RCasatta/fbbe";
