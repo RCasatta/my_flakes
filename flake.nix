@@ -134,6 +134,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    microclaw = {
+      url = "github:RCasatta/microclaw";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
   };
 
   outputs =
@@ -166,6 +171,7 @@
     , nexus_relay_new
     , validating-lightning-signer
     , raggy
+    , microclaw
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -196,6 +202,7 @@
       nexus_relay_new_pkg = nexus_relay_new.packages.${system};
       validating-lightning-signer_pkg = validating-lightning-signer.packages.${system};
       raggy_pkg = raggy.packages.${system};
+      microclaw_pkg = microclaw.packages.${system};
 
     in
     {
@@ -226,6 +233,7 @@
       packages.nexus_relay_new = nexus_relay_new_pkg.default;
       packages.validating-lightning-signer = validating-lightning-signer_pkg.default;
       packages.raggy = raggy_pkg.default;
+      packages.microclaw = microclaw_pkg.default;
 
     });
 }

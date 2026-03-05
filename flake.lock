@@ -732,6 +732,29 @@
         "type": "github"
       }
     },
+    "microclaw": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1772738725,
+        "narHash": "sha256-4rYWCkI6HDzXPBGtYinRdy2L8NpE5NhOZ8tmy/b7Psw=",
+        "owner": "RCasatta",
+        "repo": "microclaw",
+        "rev": "64d9e413b65f2474a6ab8360bd0ba328ba217651",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "repo": "microclaw",
+        "type": "github"
+      }
+    },
     "multiqr": {
       "inputs": {
         "crane": "crane_10",
@@ -1113,6 +1136,7 @@
         "lightdash": "lightdash",
         "lightdash_new": "lightdash_new",
         "lwk_cli": "lwk_cli",
+        "microclaw": "microclaw",
         "multiqr": "multiqr",
         "nexus_relay": "nexus_relay_2",
         "nexus_relay_new": "nexus_relay_new",
