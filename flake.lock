@@ -743,11 +743,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1773004226,
-        "narHash": "sha256-ljsMKHMEmH4aGpHww3IODZ0XYEC9trQqC1yarWRVuTo=",
+        "lastModified": 1773176683,
+        "narHash": "sha256-G5QRZiWNkD68gErLgFvoWqzHYZ/2FPYQ4c3ulXGju0s=",
         "owner": "RCasatta",
         "repo": "microclaw",
-        "rev": "f1a2471d0f31fbdb210d14813e9e9f8a89344b37",
+        "rev": "f8846c83473d6799efd9550175102f4e0f5e60f3",
         "type": "github"
       },
       "original": {
