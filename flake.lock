@@ -1638,11 +1638,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1773653581,
-        "narHash": "sha256-gBH95wJPGAz/ccq66zTLVjyOFTV0h3SFLGfiQalWCIU=",
+        "lastModified": 1773657129,
+        "narHash": "sha256-L+CiXNdAHF3JtjBnlmCYAYRAn7+JNJ3uGfOsCkuHg14=",
         "owner": "RCasatta",
         "repo": "x-cli",
-        "rev": "8f3d5df692c57f2c5fcd3bc38b5dd5b1004e8cb2",
+        "rev": "908e9c5c6e78b8c5ef163e9aa533cb5f7966dd16",
         "type": "github"
       },
       "original": {
