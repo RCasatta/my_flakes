@@ -139,6 +139,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    x-cli = {
+      url = "github:RCasatta/x-cli";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
   };
 
   outputs =
@@ -172,6 +177,7 @@
     , validating-lightning-signer
     , raggy
     , microclaw
+    , x-cli
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -203,6 +209,7 @@
       validating-lightning-signer_pkg = validating-lightning-signer.packages.${system};
       raggy_pkg = raggy.packages.${system};
       microclaw_pkg = microclaw.packages.${system};
+      x_cli_pkg = x-cli.packages.${system};
 
     in
     {
@@ -234,6 +241,7 @@
       packages.validating-lightning-signer = validating-lightning-signer_pkg.default;
       packages.raggy = raggy_pkg.default;
       packages.microclaw = microclaw_pkg.default;
+      packages.x-cli = x_cli_pkg.default;
 
     });
 }

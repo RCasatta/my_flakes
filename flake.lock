@@ -1151,7 +1151,8 @@
         "summars": "summars",
         "validating-lightning-signer": "validating-lightning-signer",
         "waterfalls": "waterfalls",
-        "waterfalls2": "waterfalls2"
+        "waterfalls2": "waterfalls2",
+        "x-cli": "x-cli"
       }
     },
     "rust-overlay": {
@@ -1624,6 +1625,29 @@
         "owner": "RCasatta",
         "ref": "outpoint",
         "repo": "waterfalls",
+        "type": "github"
+      }
+    },
+    "x-cli": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1773653581,
+        "narHash": "sha256-gBH95wJPGAz/ccq66zTLVjyOFTV0h3SFLGfiQalWCIU=",
+        "owner": "RCasatta",
+        "repo": "x-cli",
+        "rev": "8f3d5df692c57f2c5fcd3bc38b5dd5b1004e8cb2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "repo": "x-cli",
         "type": "github"
       }
     }
