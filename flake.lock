@@ -715,16 +715,17 @@
         "nixpkgs": [
           "nixpkgs"
         ],
+        "nixpkgs-mdbook": "nixpkgs-mdbook",
         "registry-flake": "registry-flake",
         "rust-overlay": "rust-overlay_8",
         "waterfalls-flake": "waterfalls-flake"
       },
       "locked": {
-        "lastModified": 1773405866,
-        "narHash": "sha256-g2vqKDIgogmAT0NcIPrU2EVkiAVTIcm+41i+asPDGhk=",
+        "lastModified": 1775548647,
+        "narHash": "sha256-ygO6FqD/ndJI/2bYIIa2BsQVM74sTKNbskhlHJc8Szw=",
         "owner": "blockstream",
         "repo": "lwk",
-        "rev": "d82d322cceca36dd5ad47bf3cb862c864945092d",
+        "rev": "2383b3cba5f45cce7213d9affe29d9e0756a05cc",
         "type": "github"
       },
       "original": {
@@ -909,6 +910,22 @@
         "owner": "NixOS",
         "ref": "nixpkgs-unstable",
         "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-mdbook": {
+      "locked": {
+        "lastModified": 1733229606,
+        "narHash": "sha256-FLYY5M0rpa5C2QAE3CKLYAM6TwbKicdRK6qNrSHlNrE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "566e53c2ad750c84f6d31f9ccb9d00f823165550",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "566e53c2ad750c84f6d31f9ccb9d00f823165550",
         "type": "github"
       }
     },
