@@ -665,11 +665,11 @@
         "rust-overlay": "rust-overlay_5"
       },
       "locked": {
-        "lastModified": 1776526163,
-        "narHash": "sha256-wZrcZiNm4fW5wfhMAFJH59CIFDP1PjGm7JDQ6ejzF7w=",
+        "lastModified": 1776529792,
+        "narHash": "sha256-l2vKfXv/lPJOiwzYspwjngGDAFkbYWAeax4UnM6juaA=",
         "owner": "RCasatta",
         "repo": "lightdash",
-        "rev": "d02b75842cd015d8fe4dd12c592b08b3ce6381c7",
+        "rev": "c1f5407d531e14a495932d25ec7f9ba3c5a2bdb6",
         "type": "github"
       },
       "original": {
@@ -1469,16 +1469,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1776525959,
-        "narHash": "sha256-1zcBawyplT2l0joI1PfZW2d5awoCFIiIRyfgHW0pJ84=",
+        "lastModified": 1776527977,
+        "narHash": "sha256-6sKBMqglM/R2tLpb03IjhDccdRyMm7bXgfpcpoPpuvE=",
         "owner": "RCasatta",
         "repo": "sling",
-        "rev": "c8f2b2f3c864e653f7c122d7288bf34e974565bd",
+        "rev": "9a570578a3a61e8f480f9ea9c5048a33f7a98de0",
         "type": "github"
       },
       "original": {
         "owner": "RCasatta",
-        "ref": "other_channel_partner",
+        "ref": "last_channel_partner",
         "repo": "sling",
         "type": "github"
       }
