@@ -69,7 +69,7 @@
     };
     sling = {
       # url = "github:daywalker90/sling";
-      url = "github:RCasatta/sling/other_channel_partner";
+      url = "github:RCasatta/sling/last_channel_partner";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
