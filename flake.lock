@@ -665,11 +665,11 @@
         "rust-overlay": "rust-overlay_5"
       },
       "locked": {
-        "lastModified": 1776513030,
-        "narHash": "sha256-1gyR+mZnzT5EmWjBjMvO5dkaQxSYN3eHAbmeGWMejWs=",
+        "lastModified": 1776526163,
+        "narHash": "sha256-wZrcZiNm4fW5wfhMAFJH59CIFDP1PjGm7JDQ6ejzF7w=",
         "owner": "RCasatta",
         "repo": "lightdash",
-        "rev": "996c214a14454b1faead731b2e7db6635db0c1e5",
+        "rev": "d02b75842cd015d8fe4dd12c592b08b3ce6381c7",
         "type": "github"
       },
       "original": {
@@ -1469,15 +1469,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1766962383,
-        "narHash": "sha256-CfYWIY4lL7eDsfwHl4csH+hv9SvxBW35+Qpq5o3oNSA=",
-        "owner": "daywalker90",
+        "lastModified": 1776525959,
+        "narHash": "sha256-1zcBawyplT2l0joI1PfZW2d5awoCFIiIRyfgHW0pJ84=",
+        "owner": "RCasatta",
         "repo": "sling",
-        "rev": "fde430800971d71aa8c374bdbb1aecc997744866",
+        "rev": "c8f2b2f3c864e653f7c122d7288bf34e974565bd",
         "type": "github"
       },
       "original": {
-        "owner": "daywalker90",
+        "owner": "RCasatta",
+        "ref": "other_channel_partner",
         "repo": "sling",
         "type": "github"
       }
