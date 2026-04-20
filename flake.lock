@@ -1020,11 +1020,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1762277141,
-        "narHash": "sha256-ioosrGDpPSc2/CNtG5hcIlZPQsySN0zmKTAldzVuTPk=",
+        "lastModified": 1776714092,
+        "narHash": "sha256-tLcTn6mgJhstFULXYFk8pbq+wdOesoHkcYtm4Ug6C/w=",
         "owner": "RCasatta",
         "repo": "opreturn_org",
-        "rev": "0f5ec8f02315176344e07348340be4c76b875e5f",
+        "rev": "44ddc314b0db2064d8233369026f725cfb087036",
         "type": "github"
       },
       "original": {
