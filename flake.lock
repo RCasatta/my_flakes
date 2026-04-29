@@ -722,16 +722,13 @@
       },
       "locked": {
         "lastModified": 1777449958,
-        "narHash": "sha256-UASAU2uOmMO2EweheDS3/8C35EBOI/KEspkadXl/fnA=",
-        "ref": "refs/heads/master",
-        "rev": "0252c1d786804ed9dd454e24e22e48e9de32404a",
-        "revCount": 6711,
-        "type": "git",
-        "url": "https://github.com/blockstream/lwk"
+        "narHash": "sha256-qqFoVOdzTZEeRB0X+otzouvsJBnHxOPp6O4VtMbLEIs=",
+        "type": "tarball",
+        "url": "https://github.com/blockstream/lwk/archive/refs/heads/master.tar.gz"
       },
       "original": {
-        "type": "git",
-        "url": "https://github.com/blockstream/lwk"
+        "type": "tarball",
+        "url": "https://github.com/blockstream/lwk/archive/refs/heads/master.tar.gz"
       }
     },
     "microclaw": {

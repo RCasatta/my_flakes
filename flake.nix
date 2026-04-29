@@ -79,7 +79,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     lwk_cli = {
-      url = "git+https://github.com/blockstream/lwk";
+      url = "https://github.com/blockstream/lwk/archive/refs/heads/master.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
