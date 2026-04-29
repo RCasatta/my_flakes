@@ -721,11 +721,11 @@
         "waterfalls-flake": "waterfalls-flake"
       },
       "locked": {
-        "lastModified": 1775839973,
-        "narHash": "sha256-pBr/xNzNqeqEd1lOlPNk8+UHYmW7SxiJE/86qObYYH8=",
+        "lastModified": 1777449958,
+        "narHash": "sha256-UASAU2uOmMO2EweheDS3/8C35EBOI/KEspkadXl/fnA=",
         "owner": "blockstream",
         "repo": "lwk",
-        "rev": "654a8cc779a4a6a7c2bd80b2dafc91c32f2d76d5",
+        "rev": "0252c1d786804ed9dd454e24e22e48e9de32404a",
         "type": "github"
       },
       "original": {
