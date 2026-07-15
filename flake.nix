@@ -23,7 +23,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     waterfalls2 = {
-      url = "github:RCasatta/waterfalls/password_file";
+      url = "github:RCasatta/waterfalls/keepalive";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
