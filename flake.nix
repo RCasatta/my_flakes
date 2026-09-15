@@ -19,7 +19,6 @@
     };
     forge-sync = {
       url = "github:RCasatta/forge-sync";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
     waterfalls = {
       url = "github:RCasatta/waterfalls";
