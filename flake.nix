@@ -17,6 +17,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    forge-sync = {
+      url = "github:RCasatta/forge-sync";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     waterfalls = {
       url = "github:RCasatta/waterfalls";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -153,6 +157,7 @@
     , blocks_iterator
     , brokenlinks
     , fbbe
+    , forge-sync
     , waterfalls
     , waterfalls2
     , eternitywall
@@ -185,6 +190,7 @@
       blocks_iterator_pkg = blocks_iterator.packages.${system};
       brokenlinks_pkg = brokenlinks.packages.${system};
       fbbe_pkg = fbbe.packages.${system};
+      forge_sync_pkg = forge-sync.packages.${system};
       waterfalls_pkg = waterfalls.packages.${system};
       waterfalls2_pkg = waterfalls2.packages.${system};
       eternitywall_pkg = eternitywall.packages.${system};
@@ -216,6 +222,7 @@
       packages.blocks_iterator = blocks_iterator_pkg.default;
       packages.brokenlinks = brokenlinks_pkg.default;
       packages.fbbe = fbbe_pkg.default;
+      packages.forge-sync = forge_sync_pkg.default;
       packages.waterfalls = waterfalls_pkg.default;
       packages.waterfalls2 = waterfalls2_pkg.default;
       packages.eternitywall = eternitywall_pkg.default;

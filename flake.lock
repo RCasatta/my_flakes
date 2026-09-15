@@ -653,6 +653,26 @@
         "type": "github"
       }
     },
+    "forge-sync": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1789489758,
+        "narHash": "sha256-HqznVtGel0RGyxeUlTxWUX2MO1cCsIhD5Uckx+mGF54=",
+        "owner": "RCasatta",
+        "repo": "forge-sync",
+        "rev": "d55f60a8fb92f790eb2520f990070e21a5760a67",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "repo": "forge-sync",
+        "type": "github"
+      }
+    },
     "lightdash": {
       "inputs": {
         "crane": "crane_7",
@@ -1108,6 +1128,7 @@
         "fbbe": "fbbe",
         "firma2": "firma2",
         "flake-utils": "flake-utils_2",
+        "forge-sync": "forge-sync",
         "lightdash": "lightdash",
         "lightdash_new": "lightdash_new",
         "lwk_cli": "lwk_cli",
