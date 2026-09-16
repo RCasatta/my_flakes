@@ -658,11 +658,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1789489758,
-        "narHash": "sha256-HqznVtGel0RGyxeUlTxWUX2MO1cCsIhD5Uckx+mGF54=",
+        "lastModified": 1789542415,
+        "narHash": "sha256-xwQmu7tENcaF0DX5aJWIU1pUmd2PQ7sQBkWBMPDsyO4=",
         "owner": "RCasatta",
         "repo": "forge-sync",
-        "rev": "d55f60a8fb92f790eb2520f990070e21a5760a67",
+        "rev": "39d99151b2a4818f216632859004a650c2de7147",
         "type": "github"
       },
       "original": {
