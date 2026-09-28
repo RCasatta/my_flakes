@@ -20,6 +20,10 @@
     forge-sync = {
       url = "github:RCasatta/forge-sync";
     };
+    funes = {
+      url = "github:RCasatta/funes/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     waterfalls = {
       url = "github:RCasatta/waterfalls";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -157,6 +161,7 @@
     , brokenlinks
     , fbbe
     , forge-sync
+    , funes
     , waterfalls
     , waterfalls2
     , eternitywall
@@ -190,6 +195,7 @@
       brokenlinks_pkg = brokenlinks.packages.${system};
       fbbe_pkg = fbbe.packages.${system};
       forge_sync_pkg = forge-sync.packages.${system};
+      funes_pkg = funes.packages.${system};
       waterfalls_pkg = waterfalls.packages.${system};
       waterfalls2_pkg = waterfalls2.packages.${system};
       eternitywall_pkg = eternitywall.packages.${system};
@@ -222,6 +228,7 @@
       packages.brokenlinks = brokenlinks_pkg.default;
       packages.fbbe = fbbe_pkg.default;
       packages.forge-sync = forge_sync_pkg.default;
+      packages.funes = funes_pkg.default;
       packages.waterfalls = waterfalls_pkg.default;
       packages.waterfalls2 = waterfalls2_pkg.default;
       packages.eternitywall = eternitywall_pkg.default;
