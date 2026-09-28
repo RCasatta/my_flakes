@@ -763,8 +763,8 @@
         "waterfalls-rust-overlay": "waterfalls-rust-overlay"
       },
       "locked": {
-        "lastModified": 1782974990,
-        "narHash": "sha256-NURhxNYXEl4Bv+NZxDtm1EBhQOx6Cgamic5dCzFsQaA=",
+        "lastModified": 1790349173,
+        "narHash": "sha256-8xR9z+ZGnQzJOlIIUNCK/nTEx+qlAj48Nv/ND0FqdXo=",
         "type": "tarball",
         "url": "https://github.com/blockstream/lwk/archive/refs/heads/master.tar.gz"
       },
@@ -1591,11 +1591,11 @@
         "rust-overlay": "rust-overlay_12"
       },
       "locked": {
-        "lastModified": 1784877210,
-        "narHash": "sha256-fXGcl5Un3VcdhSYVPZfPVupRMLEPZj9ewqQNAxW/6H8=",
+        "lastModified": 1790597201,
+        "narHash": "sha256-jNV+clAt+aP4SgKx6FFe7Jvyme45W3QlZWIcHDyOU2M=",
         "owner": "RCasatta",
         "repo": "waterfalls",
-        "rev": "15c74d9710074bb27df3b4872ce46efeb6216853",
+        "rev": "809132b96cb85f6a78c24302d7512762f41c18af",
         "type": "github"
       },
       "original": {
@@ -1640,11 +1640,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781615848,
-        "narHash": "sha256-C23bOInuk9R/1FPvesJgHKENGvRCX/vZxVB7BNgp7fA=",
+        "lastModified": 1785837292,
+        "narHash": "sha256-LkrGf7YSIFfrNPcEWY9nM1L+g+gcAYBccDkrrg1XZeM=",
         "owner": "RCasatta",
         "repo": "waterfalls",
-        "rev": "5ec929fc8a66daf4ca25b69ac263ff22bcc6d037",
+        "rev": "c35c3dd5926113678681c29123335b6113573a69",
         "type": "github"
       },
       "original": {
