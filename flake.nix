@@ -160,7 +160,7 @@
       #, reverse_proxy
     , btc_median_price
     }:
-    flake-utils.lib.eachDefaultSystem (system:
+    (flake-utils.lib.eachDefaultSystem (system:
     let
       pkgs = import nixpkgs { inherit system; };
       blocks_iterator_pkg = blocks_iterator.packages.${system};
@@ -192,6 +192,7 @@
       packages.blocks_iterator = blocks_iterator_pkg.default;
       packages.brokenlinks = brokenlinks_pkg.default;
       packages.buzz = buzz_pkg.default;
+      packages.buzz-sprig = buzz_pkg.sprig;
       packages.fbbe = fbbe_pkg.default;
       packages.forge-sync = forge_sync_pkg.default;
       packages.funes = funes_pkg.default;
@@ -214,5 +215,10 @@
       #packages.reverse_proxy = reverse_proxy_pkg.default;
       packages.btc_median_price = btc_median_price_pkg.default;
 
-    });
+    })) // {
+      # NixOS modules are not per-system. Their default packages come from the
+      # inputs above, so they are built with this flake's nixpkgs.
+      nixosModules.buzz-relay = buzz.nixosModules.buzz-relay;
+      nixosModules.buzz-agent = buzz.nixosModules.buzz-agent;
+    };
 }
