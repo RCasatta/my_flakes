@@ -18,6 +18,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust-overlay.follows = "rust-overlay";
     };
+    buzz = {
+      url = "github:RCasatta/buzz/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
+    };
     fbbe = {
       url = "github:RCasatta/fbbe";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -133,6 +138,7 @@
     , rust-overlay
     , blocks_iterator
     , brokenlinks
+    , buzz
     , fbbe
     , forge-sync
     , funes
@@ -159,6 +165,7 @@
       pkgs = import nixpkgs { inherit system; };
       blocks_iterator_pkg = blocks_iterator.packages.${system};
       brokenlinks_pkg = brokenlinks.packages.${system};
+      buzz_pkg = buzz.packages.${system};
       fbbe_pkg = fbbe.packages.${system};
       forge_sync_pkg = forge-sync.packages.${system};
       funes_pkg = funes.packages.${system};
@@ -184,6 +191,7 @@
     {
       packages.blocks_iterator = blocks_iterator_pkg.default;
       packages.brokenlinks = brokenlinks_pkg.default;
+      packages.buzz = buzz_pkg.default;
       packages.fbbe = fbbe_pkg.default;
       packages.forge-sync = forge_sync_pkg.default;
       packages.funes = funes_pkg.default;
