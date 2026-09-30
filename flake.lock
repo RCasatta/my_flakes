@@ -763,8 +763,8 @@
         "waterfalls-rust-overlay": "waterfalls-rust-overlay"
       },
       "locked": {
-        "lastModified": 1790349173,
-        "narHash": "sha256-8xR9z+ZGnQzJOlIIUNCK/nTEx+qlAj48Nv/ND0FqdXo=",
+        "lastModified": 1790680044,
+        "narHash": "sha256-Rao3V2sNpr121GJ1tLeO4gRYTag71IJBfV7c6UJoA7o=",
         "type": "tarball",
         "url": "https://github.com/blockstream/lwk/archive/refs/heads/master.tar.gz"
       },
