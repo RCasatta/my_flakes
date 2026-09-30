@@ -2,20 +2,27 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     blocks_iterator = {
       url = "github:RCasatta/blocks_iterator";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
     brokenlinks = {
       url = "github:RCasatta/brokenlinks";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
     fbbe = {
       url = "github:RCasatta/fbbe";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
     forge-sync = {
       url = "github:RCasatta/forge-sync";
@@ -23,16 +30,13 @@
     funes = {
       url = "github:RCasatta/funes/nix";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
     waterfalls = {
       url = "github:RCasatta/waterfalls";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-    };
-    waterfalls2 = {
-      url = "github:RCasatta/waterfalls/keepalive";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
     eternitywall = {
       url = "github:RCasatta/eternitywall";
@@ -48,11 +52,7 @@
       url = "github:RCasatta/lightdash";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-    };
-    lightdash_new = {
-      url = "github:RCasatta/lightdash/new";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
     pay2email = {
       url = "github:RCasatta/pay2email";
@@ -68,6 +68,7 @@
       url = "git+ssh://git@git.casatta.it/git/esplora-enterprise-monitoring";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
     post2fs = {
       url = "git+ssh://git@git.casatta.it/git/post2fs";
@@ -89,6 +90,8 @@
       url = "https://github.com/blockstream/lwk/archive/refs/heads/master.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
+      inputs.rust-overlay.follows = "rust-overlay";
+      inputs.waterfalls-rust-overlay.follows = "rust-overlay";
     };
     #dinasty = {
     #  url = "git+ssh://git@git.casatta.it/git/dinasty";
@@ -121,53 +124,22 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
-    nexus_relay = {
-      url = "github:RCasatta/nexus_relay";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
-    nexus_relay_new = {
-      url = "github:RCasatta/nexus_relay/new";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
-    validating-lightning-signer = {
-      url = "github:RCasatta/validating-lightning-signer/nix-package";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
-    raggy = {
-      url = "github:RCasatta/raggy";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
-    microclaw = {
-      url = "github:RCasatta/microclaw";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
-    x-cli = {
-      url = "github:RCasatta/x-cli";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
   };
 
   outputs =
     { self
     , nixpkgs
     , flake-utils
+    , rust-overlay
     , blocks_iterator
     , brokenlinks
     , fbbe
     , forge-sync
     , funes
     , waterfalls
-    , waterfalls2
     , eternitywall
     , opreturn_org
     , lightdash
-    , lightdash_new
     , pay2email
     #, electrs
     , esplora-enterprise-monitoring
@@ -181,12 +153,6 @@
     , scriptpubkeys_per_block
       #, reverse_proxy
     , btc_median_price
-    , nexus_relay
-    , nexus_relay_new
-    , validating-lightning-signer
-    , raggy
-    , microclaw
-    , x-cli
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -197,11 +163,9 @@
       forge_sync_pkg = forge-sync.packages.${system};
       funes_pkg = funes.packages.${system};
       waterfalls_pkg = waterfalls.packages.${system};
-      waterfalls2_pkg = waterfalls2.packages.${system};
       eternitywall_pkg = eternitywall.packages.${system};
       opreturn_org_pkg = opreturn_org.packages.${system};
       lightdash_pkg = lightdash.packages.${system};
-      lightdash_new_pkg = lightdash_new.packages.${system};
       pay2email_pkg = pay2email.packages.${system};
       #electrs_pkg = electrs.packages.${system};
       esplora-enterprise-monitoring_pkg = esplora-enterprise-monitoring.packages.${system};
@@ -215,12 +179,6 @@
       scriptpubkeys_per_block_pkg = scriptpubkeys_per_block.packages.${system};
       # reverse_proxy_pkg = reverse_proxy.packages.${system};
       btc_median_price_pkg = btc_median_price.packages.${system};
-      nexus_relay_pkg = nexus_relay.packages.${system};
-      nexus_relay_new_pkg = nexus_relay_new.packages.${system};
-      validating-lightning-signer_pkg = validating-lightning-signer.packages.${system};
-      raggy_pkg = raggy.packages.${system};
-      microclaw_pkg = microclaw.packages.${system};
-      x_cli_pkg = x-cli.packages.${system};
 
     in
     {
@@ -230,11 +188,9 @@
       packages.forge-sync = forge_sync_pkg.default;
       packages.funes = funes_pkg.default;
       packages.waterfalls = waterfalls_pkg.default;
-      packages.waterfalls2 = waterfalls2_pkg.default;
       packages.eternitywall = eternitywall_pkg.default;
       packages.opreturn_org = opreturn_org_pkg.default;
       packages.lightdash = lightdash_pkg.default;
-      packages.lightdash_new = lightdash_new_pkg.default;
       packages.pay2email = pay2email_pkg.default;
       #packages.electrs = electrs_pkg.bin;
       #packages.electrs_liquid = electrs_pkg.binLiquid;
@@ -249,12 +205,6 @@
       packages.scriptpubkeys_per_block = scriptpubkeys_per_block_pkg.default;
       #packages.reverse_proxy = reverse_proxy_pkg.default;
       packages.btc_median_price = btc_median_price_pkg.default;
-      packages.nexus_relay = nexus_relay_pkg.default;
-      packages.nexus_relay_new = nexus_relay_new_pkg.default;
-      packages.validating-lightning-signer = validating-lightning-signer_pkg.default;
-      packages.raggy = raggy_pkg.default;
-      packages.microclaw = microclaw_pkg.default;
-      packages.x-cli = x_cli_pkg.default;
 
     });
 }
