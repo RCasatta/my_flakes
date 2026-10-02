@@ -6,7 +6,6 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     blocks_iterator = {
       url = "github:RCasatta/blocks_iterator";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -64,22 +63,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
-    #electrs = {
-    #  url = "github:blockstream/electrs";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #  inputs.flake-utils.follows = "flake-utils";
-    #};
-    esplora-enterprise-monitoring = {
-      url = "git+ssh://git@git.casatta.it/git/esplora-enterprise-monitoring";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-      inputs.rust-overlay.follows = "rust-overlay";
-    };
-    post2fs = {
-      url = "git+ssh://git@git.casatta.it/git/post2fs";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
     sling = {
       url = "github:daywalker90/sling";
       # url = "github:RCasatta/sling";
@@ -98,11 +81,6 @@
       inputs.rust-overlay.follows = "rust-overlay";
       inputs.waterfalls-rust-overlay.follows = "rust-overlay";
     };
-    #dinasty = {
-    #  url = "git+ssh://git@git.casatta.it/git/dinasty";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #  inputs.flake-utils.follows = "flake-utils";
-    #};
     multiqr = {
       url = "github:RCasatta/multiqr";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -118,12 +96,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
-
-    #reverse_proxy = {
-    #  url = "git+ssh://git@git.casatta.it/git/blockchain_oracle?dir=reverse_proxy";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #  inputs.flake-utils.follows = "flake-utils";
-    #};
     btc_median_price = {
       url = "github:RCasatta/btc_median_price";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -147,17 +119,12 @@
     , opreturn_org
     , lightdash
     , pay2email
-    #, electrs
-    , esplora-enterprise-monitoring
-    , post2fs
     , sling
     , summars
     , lwk_cli
-      #, dinasty
     , multiqr
     , firma2
     , scriptpubkeys_per_block
-      #, reverse_proxy
     , btc_median_price
     }:
     (flake-utils.lib.eachDefaultSystem (system:
@@ -174,17 +141,12 @@
       opreturn_org_pkg = opreturn_org.packages.${system};
       lightdash_pkg = lightdash.packages.${system};
       pay2email_pkg = pay2email.packages.${system};
-      #electrs_pkg = electrs.packages.${system};
-      esplora-enterprise-monitoring_pkg = esplora-enterprise-monitoring.packages.${system};
-      post2fs_pkg = post2fs.packages.${system};
       sling_pkg = sling.packages.${system};
       summars_pkg = summars.packages.${system};
       lwk_cli_pkg = lwk_cli.packages.${system};
-      #dinasty_pkg = dinasty.packages.${system};
       multiqr_pkg = multiqr.packages.${system};
       firma2_pkg = firma2.packages.${system};
       scriptpubkeys_per_block_pkg = scriptpubkeys_per_block.packages.${system};
-      # reverse_proxy_pkg = reverse_proxy.packages.${system};
       btc_median_price_pkg = btc_median_price.packages.${system};
 
     in
@@ -201,18 +163,12 @@
       packages.opreturn_org = opreturn_org_pkg.default;
       packages.lightdash = lightdash_pkg.default;
       packages.pay2email = pay2email_pkg.default;
-      #packages.electrs = electrs_pkg.bin;
-      #packages.electrs_liquid = electrs_pkg.binLiquid;
-      packages.esplora-enterprise-monitoring = esplora-enterprise-monitoring_pkg.default;
-      packages.post2fs = post2fs_pkg.default;
       packages.sling = sling_pkg.default;
       packages.summars = summars_pkg.default;
       packages.lwk_cli = lwk_cli_pkg.default;
-      #packages.dinasty = dinasty_pkg.default;
       packages.multiqr = multiqr_pkg.default;
       packages.firma2 = firma2_pkg.default;
       packages.scriptpubkeys_per_block = scriptpubkeys_per_block_pkg.default;
-      #packages.reverse_proxy = reverse_proxy_pkg.default;
       packages.btc_median_price = btc_median_price_pkg.default;
 
     })) // {
