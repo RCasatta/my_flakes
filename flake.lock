@@ -59,6 +59,29 @@
         "type": "github"
       }
     },
+    "botco": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1791100657,
+        "narHash": "sha256-7cg26Ssf1pcygzXQfcUTozThw7/wojYgOCFVElvcRyg=",
+        "owner": "RCasatta",
+        "repo": "botco",
+        "rev": "0647892933027718927e6422ba572e86f13c063a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "repo": "botco",
+        "type": "github"
+      }
+    },
     "brokenlinks": {
       "inputs": {
         "nixpkgs": [
@@ -853,6 +876,7 @@
     "root": {
       "inputs": {
         "blocks_iterator": "blocks_iterator",
+        "botco": "botco",
         "brokenlinks": "brokenlinks",
         "btc_median_price": "btc_median_price",
         "buzz": "buzz",

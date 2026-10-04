@@ -12,6 +12,11 @@
       inputs.flake-utils.follows = "flake-utils";
       inputs.rust-overlay.follows = "rust-overlay";
     };
+    botco = {
+      url = "github:RCasatta/botco";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
     brokenlinks = {
       url = "github:RCasatta/brokenlinks";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -109,6 +114,7 @@
     , flake-utils
     , rust-overlay
     , blocks_iterator
+    , botco
     , brokenlinks
     , buzz
     , fbbe
@@ -131,6 +137,7 @@
     let
       pkgs = import nixpkgs { inherit system; };
       blocks_iterator_pkg = blocks_iterator.packages.${system};
+      botco_pkg = botco.packages.${system};
       brokenlinks_pkg = brokenlinks.packages.${system};
       buzz_pkg = buzz.packages.${system};
       fbbe_pkg = fbbe.packages.${system};
@@ -152,6 +159,7 @@
     in
     {
       packages.blocks_iterator = blocks_iterator_pkg.default;
+      packages.botco = botco_pkg.default;
       packages.brokenlinks = brokenlinks_pkg.default;
       packages.buzz = buzz_pkg.default;
       packages.buzz-sprig = buzz_pkg.sprig;
@@ -176,5 +184,6 @@
       # inputs above, so they are built with this flake's nixpkgs.
       nixosModules.buzz-relay = buzz.nixosModules.buzz-relay;
       nixosModules.buzz-agent = buzz.nixosModules.buzz-agent;
+      nixosModules.botco = botco.nixosModules.default;
     };
 }
