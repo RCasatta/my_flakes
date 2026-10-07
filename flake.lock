@@ -69,11 +69,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791231574,
-        "narHash": "sha256-MbVm0lJ5ztgJX3RlMxkwVU30vxxljtd/0wcFGG1DJrU=",
+        "lastModified": 1791359472,
+        "narHash": "sha256-pwexBMjxk1toXUvo2jEYKRrXKzWhOX29Bskw5628jRs=",
         "owner": "RCasatta",
         "repo": "botco",
-        "rev": "96d2654d5be34eb58c6a00a5e6df15b8996f5af0",
+        "rev": "d9408d392bdb7cdd2acebc5a3d69d2de6129cc9b",
         "type": "github"
       },
       "original": {
