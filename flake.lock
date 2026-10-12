@@ -648,11 +648,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791751672,
-        "narHash": "sha256-tq2HAbqI/cpc4hKvQstzoUDRq2CD+cqt4Vq3SwXXJb4=",
+        "lastModified": 1791790987,
+        "narHash": "sha256-flhrVPjf6d5siWNYGzUd45VNfsaoBczl4rokQwIVF6g=",
         "owner": "RCasatta",
         "repo": "lightdash",
-        "rev": "82d93bd8a631d7371edc2936c544527ee61d3332",
+        "rev": "57c7697d2ea7cb68aa67709827ef4cadd228cbe9",
         "type": "github"
       },
       "original": {
