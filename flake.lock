@@ -597,11 +597,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1790148557,
-        "narHash": "sha256-k1CvgHw3zjTXAgRtsK5U5rdGaC+nqK2Dr8u5rF1oegs=",
+        "lastModified": 1792657798,
+        "narHash": "sha256-f9QOG17ljv7PukmUoK8zRsQBVh7/zi4kr198MxA/gfo=",
         "owner": "RCasatta",
         "repo": "forge-sync",
-        "rev": "99d6d3f6c582f90ef44fc3462d4760a71df7ba5d",
+        "rev": "17d8c050c14ca3c86128cae77ec26572e709869a",
         "type": "github"
       },
       "original": {
@@ -743,11 +743,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1789286504,
-        "narHash": "sha256-eiEK7cKZORNEvX0GeF3RtNEF/JXhgf2RqSp3230q13E=",
+        "lastModified": 1792502884,
+        "narHash": "sha256-IoNisKcGbUjdd45qCqywGMCYmZ5EnkxezvLII0FWwNA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ef34387ddd751e1ab8857adf4676492d32eb24ec",
+        "rev": "02c087f3fe673c9e317f206a627cb6b910336dbe",
         "type": "github"
       },
       "original": {
