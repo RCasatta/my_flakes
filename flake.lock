@@ -796,11 +796,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1792912131,
-        "narHash": "sha256-GDStSrWabrqLj+u70YfdkSIgtLic3oAFqa5p5kNM6K0=",
+        "lastModified": 1792916195,
+        "narHash": "sha256-geLsSBmHdiXXJXIXs6Cyy/CaK7hFW9tUKQnYZ1MlQhU=",
         "owner": "RCasatta",
         "repo": "opentimestamps-server",
-        "rev": "56bcb0b1ce0c81d64f6eb6c67c8af71416388746",
+        "rev": "bd1d51e51fb866c3f1406c75d4462554b19c7aa1",
         "type": "github"
       },
       "original": {
