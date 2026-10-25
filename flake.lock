@@ -789,6 +789,27 @@
         "type": "github"
       }
     },
+    "opentimestamps-server": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1792912131,
+        "narHash": "sha256-GDStSrWabrqLj+u70YfdkSIgtLic3oAFqa5p5kNM6K0=",
+        "owner": "RCasatta",
+        "repo": "opentimestamps-server",
+        "rev": "56bcb0b1ce0c81d64f6eb6c67c8af71416388746",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RCasatta",
+        "ref": "flake_and_wallet",
+        "repo": "opentimestamps-server",
+        "type": "github"
+      }
+    },
     "opreturn_org": {
       "inputs": {
         "advisory-db": "advisory-db_2",
@@ -890,6 +911,7 @@
         "lwk_cli": "lwk_cli",
         "multiqr": "multiqr",
         "nixpkgs": "nixpkgs_2",
+        "opentimestamps-server": "opentimestamps-server",
         "opreturn_org": "opreturn_org",
         "pay2email": "pay2email",
         "rust-overlay": "rust-overlay",

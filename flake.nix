@@ -106,6 +106,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
+    opentimestamps-server = {
+      url = "github:RCasatta/opentimestamps-server/flake_and_wallet";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -132,6 +136,7 @@
     , firma2
     , scriptpubkeys_per_block
     , btc_median_price
+    , opentimestamps-server
     }:
     (flake-utils.lib.eachDefaultSystem (system:
     let
@@ -155,6 +160,7 @@
       firma2_pkg = firma2.packages.${system};
       scriptpubkeys_per_block_pkg = scriptpubkeys_per_block.packages.${system};
       btc_median_price_pkg = btc_median_price.packages.${system};
+      opentimestamps_server_pkg = opentimestamps-server.packages.${system};
 
     in
     {
@@ -178,6 +184,7 @@
       packages.firma2 = firma2_pkg.default;
       packages.scriptpubkeys_per_block = scriptpubkeys_per_block_pkg.default;
       packages.btc_median_price = btc_median_price_pkg.default;
+      packages.opentimestamps-server = opentimestamps_server_pkg.default;
 
     })) // {
       # NixOS modules are not per-system. Their default packages come from the
