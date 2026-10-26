@@ -796,16 +796,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1792916195,
-        "narHash": "sha256-geLsSBmHdiXXJXIXs6Cyy/CaK7hFW9tUKQnYZ1MlQhU=",
-        "owner": "RCasatta",
+        "lastModified": 1793026434,
+        "narHash": "sha256-dbU0gb6WjBgJVQRu53XUHCk//t5eDgIIt4fTwCW+elI=",
+        "owner": "opentimestamps",
         "repo": "opentimestamps-server",
-        "rev": "bd1d51e51fb866c3f1406c75d4462554b19c7aa1",
+        "rev": "e6a614720e65308b361446f40b0688cf3ef5abc1",
         "type": "github"
       },
       "original": {
-        "owner": "RCasatta",
-        "ref": "flake_and_wallet",
+        "owner": "opentimestamps",
         "repo": "opentimestamps-server",
         "type": "github"
       }

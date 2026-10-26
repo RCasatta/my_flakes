@@ -107,7 +107,7 @@
       inputs.flake-utils.follows = "flake-utils";
     };
     opentimestamps-server = {
-      url = "github:RCasatta/opentimestamps-server/flake_and_wallet";
+      url = "github:opentimestamps/opentimestamps-server";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
