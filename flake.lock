@@ -19,11 +19,11 @@
     "advisory-db_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1717596017,
-        "narHash": "sha256-LHjTqlOLgtv43GVkeM7Hb5HcZG5i/vNHnWgYaUzu+Jg=",
+        "lastModified": 1793095362,
+        "narHash": "sha256-y2Y5TPInS05cpQWXH6wwfuJv8i6HG2kXMxOKcQko22w=",
         "owner": "rustsec",
         "repo": "advisory-db",
-        "rev": "af76d4423761499f954411bb3071dcc72e6b0450",
+        "rev": "99670cfc0bc574433034b75876a4b791ccaa2efb",
         "type": "github"
       },
       "original": {
@@ -46,11 +46,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1782979304,
-        "narHash": "sha256-P6oWxVs3fBClMOR1PIeBI+WZfA3EGVIkQlBnoG0/xy4=",
+        "lastModified": 1793179468,
+        "narHash": "sha256-IKC81JUtYhHQ3etXJU8LB+XtD3b/l4grRAl203RF9dM=",
         "owner": "RCasatta",
         "repo": "blocks_iterator",
-        "rev": "9ed83503e587cd3035c2c91aca807f9029446ec1",
+        "rev": "cd38ea9e5e9222092271b478d085bbdcdd200e05",
         "type": "github"
       },
       "original": {
@@ -169,18 +169,12 @@
       }
     },
     "crane_10": {
-      "inputs": {
-        "nixpkgs": [
-          "opreturn_org",
-          "nixpkgs"
-        ]
-      },
       "locked": {
-        "lastModified": 1717895724,
-        "narHash": "sha256-dHwxCMe/Ki1xOAnbF9jQTXSFAMujpTnwWMbXvxcb5Uo=",
+        "lastModified": 1792350552,
+        "narHash": "sha256-292lvpvxTGKryKxh3/3tcIVi85CwYGdl4oOi113Sob8=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "a21d14679fb306ab8fa6ae0255eb9dc185039367",
+        "rev": "e675a36b7377bebe41d548388a2501cbb16d380d",
         "type": "github"
       },
       "original": {
@@ -518,11 +512,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1717827974,
-        "narHash": "sha256-ixopuTeTouxqTxfMuzs6IaRttbT8JqRW5C9Q/57WxQw=",
+        "lastModified": 1793101960,
+        "narHash": "sha256-0xK5XzBOt/+FnKl4E70KXv+Chl8FLxL0qOYAeHKUn1Y=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "ab655c627777ab5f9964652fe23bbb1dfbd687a8",
+        "rev": "dec0a3fee20fbe567c75362e1a527387b3d4a2c3",
         "type": "github"
       },
       "original": {
@@ -822,11 +816,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789234830,
-        "narHash": "sha256-lPHObf4eqGCaqb1UoIUn+pfTphqGuuhgG7iS+g7USWY=",
+        "lastModified": 1793261129,
+        "narHash": "sha256-mFO0gslpZosaF1fR3EanfZ57Ih2o6kUzsj6vooL12B0=",
         "owner": "RCasatta",
         "repo": "opreturn_org",
-        "rev": "c651e7fd90da37323ab3e132e9a267b29c8a49b8",
+        "rev": "e9b48e908afa34d75b154893fb1e1a3e308296bb",
         "type": "github"
       },
       "original": {
