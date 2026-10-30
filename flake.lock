@@ -3,11 +3,11 @@
     "advisory-db": {
       "flake": false,
       "locked": {
-        "lastModified": 1719490091,
-        "narHash": "sha256-FIDzlKCLL8D02bSWgNUw0ydc+ctyV34ELirYuENvjlE=",
+        "lastModified": 1793358759,
+        "narHash": "sha256-hxKuHEEXkeXPb6jP2EZu1Bl/Q4d4wihs/PYBN/b2Ntw=",
         "owner": "rustsec",
         "repo": "advisory-db",
-        "rev": "f5b488da7f6994a1fef6c4c78250cb25275c6c99",
+        "rev": "2295466c4e9df26647fd67d8fa1c705ac2fc7f81",
         "type": "github"
       },
       "original": {
@@ -281,18 +281,12 @@
       }
     },
     "crane_3": {
-      "inputs": {
-        "nixpkgs": [
-          "eternitywall",
-          "nixpkgs"
-        ]
-      },
       "locked": {
-        "lastModified": 1719249093,
-        "narHash": "sha256-0q1haa3sw6GbmJ+WhogMnducZGjEaCa/iR6hF2vq80I=",
+        "lastModified": 1792350552,
+        "narHash": "sha256-292lvpvxTGKryKxh3/3tcIVi85CwYGdl4oOi113Sob8=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "9791c77eb7e98b8d8ac5b0305d47282f994411ca",
+        "rev": "e675a36b7377bebe41d548388a2501cbb16d380d",
         "type": "github"
       },
       "original": {
@@ -437,11 +431,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791114385,
-        "narHash": "sha256-F2DfMu6i88BlrFu1okI3JIGTnLg7h4DkZ2vH+THiimk=",
+        "lastModified": 1793360827,
+        "narHash": "sha256-HEVN8DsXOlHA4PurjZQar5nzLX+d9zZ4aLLSnv9tsM0=",
         "owner": "RCasatta",
         "repo": "eternitywall",
-        "rev": "a46b5365de7887943155ebb2c35cc60dd567aa10",
+        "rev": "fd86d3f83eef7b76ad9d33de116c69ce3d9ce33c",
         "type": "github"
       },
       "original": {
@@ -488,11 +482,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1719469637,
-        "narHash": "sha256-cOA40mIqjIIf+mCdtuglxdP/0to1LDL1Lkef7vqVykc=",
+        "lastModified": 1793277514,
+        "narHash": "sha256-oazTcfIGr1pFdY8oNZ9A5yEsNBa5fzsV3w5bEdXmJl4=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "3374c72204714eb979719e77a1856009584ba4d7",
+        "rev": "cf57f8966c3c129e31caaf29790caf8a6a93e0a6",
         "type": "github"
       },
       "original": {
