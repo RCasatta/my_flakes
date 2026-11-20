@@ -458,11 +458,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1795185671,
-        "narHash": "sha256-cqREuXF6duXMHE/ZYcKXEnE7hhiJ4Kp/GUIZ9gJyw2Q=",
+        "lastModified": 1795186421,
+        "narHash": "sha256-YvNP4+FGuA3ij5VH+dna6+onK7jFMMk6GJoVWQLam/4=",
         "owner": "RCasatta",
         "repo": "fbbe",
-        "rev": "6cce5f886f0b680258091667218adef1c4090808",
+        "rev": "edab023ad7cd0cb93002935a5bf9f0f1d7ddec8b",
         "type": "github"
       },
       "original": {
