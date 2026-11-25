@@ -33,6 +33,12 @@
       inputs.flake-utils.follows = "flake-utils";
       inputs.rust-overlay.follows = "rust-overlay";
     };
+    fbbe-address-balance = {
+      url = "github:RCasatta/fbbe/address-balance";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+      inputs.rust-overlay.follows = "rust-overlay";
+    };
     forge-sync = {
       url = "github:RCasatta/forge-sync";
     };
@@ -122,6 +128,7 @@
     , brokenlinks
     , buzz
     , fbbe
+    , fbbe-address-balance
     , forge-sync
     , funes
     , waterfalls
@@ -146,6 +153,7 @@
       brokenlinks_pkg = brokenlinks.packages.${system};
       buzz_pkg = buzz.packages.${system};
       fbbe_pkg = fbbe.packages.${system};
+      fbbe_address_balance_pkg = fbbe-address-balance.packages.${system};
       forge_sync_pkg = forge-sync.packages.${system};
       funes_pkg = funes.packages.${system};
       waterfalls_pkg = waterfalls.packages.${system};
@@ -170,6 +178,7 @@
       packages.buzz = buzz_pkg.default;
       packages.buzz-sprig = buzz_pkg.sprig;
       packages.fbbe = fbbe_pkg.default;
+      packages.fbbe-address-balance = fbbe_address_balance_pkg.default;
       packages.forge-sync = forge_sync_pkg.default;
       packages.funes = funes_pkg.default;
       packages.waterfalls = waterfalls_pkg.default;
